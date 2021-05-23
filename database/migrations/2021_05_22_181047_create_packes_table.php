@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateFormulairsTable extends Migration
+class CreatePackesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,13 +13,13 @@ class CreateFormulairsTable extends Migration
      */
     public function up()
     {
-        Schema::create('formulairs', function (Blueprint $table) {
+        Schema::create('packes', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
-            $table->integer('id_choix')->nullable();
-            $table->foreign('id_choix')->references('id')->on('choixes');
-            $table->integer('id_commande')->nullable();
-            $table->foreign('id_commande')->references('id')->on('commandes');
+            $table->char('name', 20);
+            $table->integer('prix');
+            
+
         });
     }
 
@@ -30,6 +30,6 @@ class CreateFormulairsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('formulairs');
+        Schema::dropIfExists('packes');
     }
 }

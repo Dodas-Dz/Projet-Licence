@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\commande;
+use App\Models\tva;
 use Illuminate\Http\Request;
 
-class CommandeController extends Controller
+class TvaController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -41,10 +41,10 @@ class CommandeController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\commande  $commande
+     * @param  \App\Models\tva  $tva
      * @return \Illuminate\Http\Response
      */
-    public function show(commande $commande)
+    public function show(tva $tva)
     {
         //
     }
@@ -52,10 +52,10 @@ class CommandeController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\commande  $commande
+     * @param  \App\Models\tva  $tva
      * @return \Illuminate\Http\Response
      */
-    public function edit(commande $commande)
+    public function edit(tva $tva)
     {
         //
     }
@@ -64,10 +64,10 @@ class CommandeController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\commande  $commande
+     * @param  \App\Models\tva  $tva
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, commande $commande)
+    public function update(Request $request, tva $tva)
     {
         //
     }
@@ -75,10 +75,10 @@ class CommandeController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\commande  $commande
+     * @param  \App\Models\tva  $tva
      * @return \Illuminate\Http\Response
      */
-    public function destroy(commande $commande)
+    public function destroy(tva $tva)
     {
         //
     }

@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\produit;
+use App\Models\commandes;
 use Illuminate\Http\Request;
 
-class ProduitController extends Controller
+class CommandesController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -41,10 +41,10 @@ class ProduitController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\produit  $produit
+     * @param  \App\Models\commandes  $commandes
      * @return \Illuminate\Http\Response
      */
-    public function show(produit $produit)
+    public function show(commandes $commandes)
     {
         //
     }
@@ -52,10 +52,10 @@ class ProduitController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\produit  $produit
+     * @param  \App\Models\commandes  $commandes
      * @return \Illuminate\Http\Response
      */
-    public function edit(produit $produit)
+    public function edit(commandes $commandes)
     {
         //
     }
@@ -64,10 +64,10 @@ class ProduitController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\produit  $produit
+     * @param  \App\Models\commandes  $commandes
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, produit $produit)
+    public function update(Request $request, commandes $commandes)
     {
         //
     }
@@ -75,10 +75,10 @@ class ProduitController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\produit  $produit
+     * @param  \App\Models\commandes  $commandes
      * @return \Illuminate\Http\Response
      */
-    public function destroy(produit $produit)
+    public function destroy(commandes $commandes)
     {
         //
     }

@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\formulair;
+use App\Models\formulaires;
 use Illuminate\Http\Request;
 
-class FormulairController extends Controller
+class FormulairesController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -41,10 +41,10 @@ class FormulairController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\formulair  $formulair
+     * @param  \App\Models\formulaires  $formulaires
      * @return \Illuminate\Http\Response
      */
-    public function show(formulair $formulair)
+    public function show(formulaires $formulaires)
     {
         //
     }
@@ -52,10 +52,10 @@ class FormulairController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\formulair  $formulair
+     * @param  \App\Models\formulaires  $formulaires
      * @return \Illuminate\Http\Response
      */
-    public function edit(formulair $formulair)
+    public function edit(formulaires $formulaires)
     {
         //
     }
@@ -64,10 +64,10 @@ class FormulairController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\formulair  $formulair
+     * @param  \App\Models\formulaires  $formulaires
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, formulair $formulair)
+    public function update(Request $request, formulaires $formulaires)
     {
         //
     }
@@ -75,10 +75,10 @@ class FormulairController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\formulair  $formulair
+     * @param  \App\Models\formulaires  $formulaires
      * @return \Illuminate\Http\Response
      */
-    public function destroy(formulair $formulair)
+    public function destroy(formulaires $formulaires)
     {
         //
     }
