@@ -1,4 +1,15 @@
 @extends('layouts.app')
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>{{ config('app.name', 'Laravel') }}</title>
+<link href="css/css.css" rel="stylesheet">	
+<link rel="stylesheet" href="{{asset('css/header.css')}}">	
+<link rel="stylesheet" href="css/respensive.css">
+</head>
+<body>
+
 
 @section('content')
 <div class="container">
@@ -21,3 +32,4 @@
     </div>
 </div>
 @endsection
+</body>
