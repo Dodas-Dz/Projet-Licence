@@ -25,18 +25,18 @@
 		
 		<nav  class="primary-navigation">
 			<ul >
-				  <li><a href="#">Acceuil</a></li>
+				  <li><a href="{{route('home')}}">Acceuil</a></li>
 				  <li><a href="#">Services &dtrif;</a>
 						<ul class="dropdown">
-						    <li><a href="C:\Users\Zerktea\Desktop\mini projet\webdev.html" >Site-web</a></li>
-						    <li><a href="C:\Users\Zerktea\Desktop\mini projetapp\appmobile.html">App-Mobile</a></li>
+						    <li><a href="{{route('serviceweb')}}" >Site-web</a></li>
+						    <li><a href="{{route('serviceweb')}}">App-Mobile</a></li>
 						    <li><a href="C:\Users\Zerktea\Desktop\miniprojetdesign\design.html">Design</a></li>
                           
 					    </ul>	
 					</li>
 					<li><a href="#">commande</a></li>
 					<li><a href="#">commande admin</a></li>
-					<li><a href="#">A propos</a></li>
+					<li><a href="{{route('apropos')}}">A propos</a></li>
 					@guest
 				@if (Route::has('login') or Route::has('register'))
                              
@@ -172,7 +172,7 @@
 		
 		<div class="container">
 			<div class="vertical-center">
-				<a href="template.html"> 
+				<a href="{{route('templateweb')}}"> 
 			  <button>  Commencez  </button> 
 			</a>
 			</div>

@@ -156,7 +156,7 @@
 		<div class="container">
 			<div class="vertical-center">
 				
-				<a href="templateapp.html"><button> Commencez </button></a> 
+				<a href="{{route('templateapp')}}"><button> Commencez </button></a> 
 			</div>
 		  </div>
 	

@@ -12,11 +12,19 @@ class ServiceController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index_web()
     {
-        //
+        return view('/web/webdev');
     }
-
+    public function index_app()
+    {
+        return view('/web/appdev');
+    }
+   /* <public function index_design()
+    {
+        return view('/web/appdev');
+    }
+    */
     /**
      * Show the form for creating a new resource.
      *

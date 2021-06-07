@@ -31,7 +31,7 @@
 		<div class="container">
 			<div class="head">
 				<div class="logo"> 
-			<img src="apropos/img/logo/zyrah.png" alt="logo">
+			<img src="web/img/logo/zyrah.png" alt="logo">
 		</div>
 		
 		
