@@ -1,0 +1,111 @@
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  background-color: rgb(255, 255, 255);
+  margin-top: 8rem;
+  margin-bottom: 5rem;
+
+  flex: auto;
+}
+main .containall {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+
+  text-align: center;
+
+  justify-content: space-around;
+}
+main .containall .text {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 1rem;
+  padding-bottom: 1.5rem;
+  color: #5451c1;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+main .containall .text .votre {
+  color: #181749;
+  padding-right: 20px;
+}
+main .commande {
+  padding-top: 2rem;
+  box-shadow: 0px 0px 20px rgb(187, 187, 187);
+  padding-bottom: 2rem;
+  background-color: rgb(241, 241, 241);
+  min-height: 480px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+main .commande .accordion {
+  background-color: #5451c1;
+  box-shadow: 0px -5px 12px #888888;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+  text-align: inherit;
+  font-size: 1.2rem;
+}
+
+.active,
+main .commande .accordion:hover {
+  background-color: #49dcb1;
+  transition-duration: 0.6s;
+}
+
+.active {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.panel .dsc {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+.panel .dsc b {
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 10px;
+  padding-bottom: 7px;
+  background-color: #49dcb1;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 15px;
+}
+
+.panel .values {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 1rem;
+  padding-bottom: 1.5rem;
+  font-family: "Times New Roman", Times, serif;
+  color: #0c0977;
+  font-weight: 600;
+}
+
+.panel {
+  display: none;
+  padding: 10px 5px 20px 18px;
+
+  box-shadow: 0px 5px 8px #888888;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  overflow: hidden;
+  color: #1a1944;
+}

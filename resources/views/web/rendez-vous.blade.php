@@ -27,24 +27,26 @@ integrity="sha384-wESLQ85D6gbsF459vf1CiZ2+rr+CsxRY0RpiF1tLlQpDnAgg6rwdsUF1+Ics2b
 		<div class="container">
 			<div class="head">
 				<div class="logo"> 
-			<img src="apropos/img/logo/zyrah.png" alt="logo">
+			<img src="web/img/logo/zyrah.png" alt="logo">
 		</div>
 		
 		
 		<nav  class="primary-navigation">
 			<ul >
-				  <li><a href="#">Acceuil</a></li>
+				  <li><a href="{{route('home')}}">Acceuil</a></li>
 				  <li><a href="#">Services &dtrif;</a>
 						<ul class="dropdown">
-						    <li><a href="C:\Users\Zerktea\Desktop\mini projet\webdev.html" >Site-web</a></li>
-						    <li><a href="C:\Users\Zerktea\Desktop\mini projetapp\appmobile.html">App-Mobile</a></li>
+						    <li><a href="{{route('serviceweb')}}" >Site-web</a></li>
+						    <li><a href="{{route('serviceweb')}}">App-Mobile</a></li>
 						    <li><a href="C:\Users\Zerktea\Desktop\miniprojetdesign\design.html">Design</a></li>
                           
 					    </ul>	
 					</li>
-					<li><a href="#">commande</a></li>
+					
+					<li><a href="{{route('commandeuser')}}">commande</a></li>
+				
 					<li><a href="#">commande admin</a></li>
-					<li><a href="#">A propos</a></li>
+					<li><a href="{{route('apropos')}}">A propos</a></li>
 					@guest
 				@if (Route::has('login') or Route::has('register'))
                              
@@ -95,6 +97,8 @@ integrity="sha384-wESLQ85D6gbsF459vf1CiZ2+rr+CsxRY0RpiF1tLlQpDnAgg6rwdsUF1+Ics2b
 		
 	
 	</header>
+
+
 
 
 <!--------------------------------end_header-------------------------------> 

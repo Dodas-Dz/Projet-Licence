@@ -34,7 +34,9 @@
                           
 					    </ul>	
 					</li>
-					<li><a href="#">commande</a></li>
+					@if (Route::has('login') or Route::has('register'))	
+					<li><a href="{{route('commandeuser')}}">commande</a></li>
+					@endif
 					<li><a href="#">commande admin</a></li>
 					<li><a href="{{route('apropos')}}">A propos</a></li>
 					@guest

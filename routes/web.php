@@ -22,5 +22,7 @@ Route::get('/templateweb', function () {
 Route::get('/templateapp', function () {
     return view('web/templateapp');
 })->name('templateapp');
-
+Route::get('/mycommande', function () {
+    return view('web/commandeuser');
+})->name('commandeuser');
 
