@@ -1,0 +1,383 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*--------------------------------------all------------------------------------*/
+
+/*-----------------------------------end-header-------------------------------*/
+nav.primary-navigation {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0 0 340px;
+  text-align: right;
+  font-size: 16px;
+}
+/*--------------------------------started-main-------------------------------*/
+/*main {}*/
+
+/*----------------------------started-home_section---------------------------*/
+main .home {
+  background-color: #5451c1;
+  height: 80vh;
+}
+main {
+  overflow-x: hidden;
+}
+main .home .home_section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 100vh;
+  padding-left: 75px;
+  width: 100%;
+}
+main .home .home_section .home_content {
+  width: 40%;
+  margin-top: -75px;
+}
+
+main .home .home_section .home_content .H1 {
+  padding-bottom: 20px;
+  font-size: 3.3rem;
+}
+main .home .home_section .home_content h2 {
+  color: #fbff00;
+
+  font-size: 2.5rem;
+}
+main .home .home_section .home_content > h1 .size {
+  color: #ffffff;
+  margin-left: 15px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  font-size: 35px;
+}
+main .home .home_section .home_content > p {
+  color: #ffffff;
+  margin-left: 15px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  font-weight: 600;
+  font-size: 30px;
+}
+
+main .home .home_section .home_content h1 {
+  color: #fbff00;
+  font-size: 50px;
+}
+main .home .home_section .home_content a {
+  display: inline-block;
+  padding: 15px 40px;
+  border-radius: 30px;
+  border: 1px solid #fff;
+  margin-right: 20px;
+  font-weight: 600;
+  color: #fff;
+  margin-top: 30px;
+  font-size: 15px;
+}
+/*------------------------------ start service description-----------------------------------------------------*/
+
+/*---------------------------------end service description----------------*/
+
+main .home .home_section .img {
+  width: 50%;
+  margin-top: -80px;
+  margin-left: 5px;
+  padding-left: 80px;
+}
+
+main .home .home_section .img img {
+  width: 450px;
+  height: 300;
+}
+/*-------------------------------end-home_section-----------------------------*/
+
+/*-------------------------------template----------------------------------*/
+
+/**-----------------------------hoooover-------------------------**/
+
+/*---------------------------------------------------------------------*/
+/*-----------------------------start-pricing_section---------------------------*/
+main .pricing {
+  padding: 40px 0px;
+}
+
+main .pricing .container .prcing_section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+main .pricing .container .prcing_section .pricing_plans {
+  position: relative;
+  width: 30%;
+  /*	text-align: center;*/
+  overflow: hidden;
+  border-radius: 30px;
+  box-shadow: 2px 2px 20px #9b9b9b;
+  height: 600px;
+}
+
+main .pricing .container .prcing_section .pricing_plans .img_pricing {
+  z-index: -1;
+}
+
+main .pricing .container .prcing_section .pricing_plans .img_pricing img {
+  width: 150%;
+  margin: -15% 0px 0px -20%;
+}
+
+main .pricing .container .prcing_section .pricing_plans .info_pricing {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 350px;
+}
+
+main .pricing .container .prcing_section .pricing_plans .info_pricing h2 {
+  padding: 20px;
+  text-align: justify;
+  color: #ffffff;
+  width: 100%;
+}
+
+main .pricing .container .prcing_section .pricing_plans .info_pricing h3 {
+  font-size: 30px;
+  text-align: right;
+  padding-right: 20px;
+  color: #ffffff;
+}
+
+main .pricing .container .prcing_section .pricing_plans .info_pricing h4 {
+  text-align: left;
+  padding: 6px 20px;
+  display: inline-block;
+  border: 1px solid #434964;
+  border-radius: 30px;
+  color: #434964;
+  font-size: 14px;
+  margin: 13px 20px;
+}
+
+main .pricing .container .prcing_section .pricing_plans .info_pricing ul {
+  text-align: center;
+  padding: 30px 0px;
+}
+
+main .pricing .container .prcing_section .pricing_plans .info_pricing ul li {
+  padding-top: 20px;
+  line-height: 30px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #434964;
+}
+
+main .pricing .container .prcing_section .pricing_plans .info_pricing ul li a {
+  display: inline-block;
+  font-size: 17px;
+  font-weight: 600;
+  padding: 3px 30px;
+  padding-top: 0.7rem;
+  padding-bottom: 0.7rem;
+  margin-top: 10px;
+  border: 0.8px solid #5451c1;
+  box-shadow: #5451c1;
+  border-radius: 10rem;
+  color: #5451c1;
+}
+main .pricing .container .prcing_section .pricing_plans .info_pricing .prc-btn {
+  background-color: #5451c1;
+  height: 5rem;
+  color: #fff;
+}
+
+/*-----------------------------end-pricing_section---------------------------*/
+
+/*-----------------------------start-our_team_section---------------------------*/
+
+/*--------------------------------start footer-------------------------------*/
+footer {
+  margin-top: 5rem;
+  background-image: url(../img/backg/footer-bg.png);
+  background-size: 100%;
+  background-color: #f6f6fc;
+  width: 100%;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+
+footer .subscribe {
+  margin-top: 5rem;
+  display: inline-block;
+
+  /*
+	position: absolute;
+	top: 33%;
+	left: 50%;
+	transform: translate(-50%,-100%);
+*/
+  box-shadow: 0px -2px 5px #c7c7c7;
+  width: 650px;
+  height: 180px;
+  background-color: #ffffff;
+  border-radius: 200px;
+}
+
+footer .subscribe h2 {
+  color: #434964;
+  padding: 25px 0px;
+}
+
+footer .subscribe input[type="email"] {
+  width: 60%;
+  height: 50px;
+  border: none;
+  padding-left: 30px;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  background-color: #f6f6fc;
+  outline: none;
+  font-weight: 600;
+}
+
+footer .subscribe input[type="button"] {
+  width: 20%;
+  height: 50px;
+  border: none;
+  border-radius: 30px;
+  background-color: #5451c1;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 600;
+  margin-left: -25px;
+  outline: none;
+}
+
+footer .all {
+  background-color: #5451c1;
+  padding-bottom: 30px;
+}
+
+footer .container .list_footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+footer .container .list_footer .lists_footer {
+  text-align: justify;
+  width: 20%;
+  padding-top: 30px;
+}
+
+footer .container .list_footer .lists_footer .logo img {
+  padding: 20px 0px 10px;
+}
+
+footer .container .list_footer .lists_footer .logo p {
+  font-size: 14px;
+  color: #ffffff;
+  line-height: 30px;
+}
+
+footer .container .list_footer .lists_footer .logo ul {
+  margin-top: 20px;
+}
+footer .container .list_footer .lists_footer .logo ul li {
+  text-align: center;
+  display: inline-block;
+  margin: 5px;
+}
+
+footer .container .list_footer .lists_footer .logo ul li a {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  border: 1px solid #fff;
+  color: #ffffff;
+  border-radius: 50%;
+  font-size: 16px;
+}
+
+footer .container .list_footer .lists_footer .logo ul li i {
+  margin-top: 9px;
+  margin-left: 5px;
+}
+
+footer .container .list_footer .lists_footer h2 {
+  color: #ffffff;
+  padding: 30px 0px 20px;
+  font-size: 22px;
+}
+
+footer .container .list_footer .lists_footer ul li {
+  margin: 10px 0px;
+  font-size: 14px;
+  color: #ffffff;
+
+  line-height: 25px;
+}
+
+footer .container .list_footer .lists_footer ul li a {
+  font-size: 14px;
+  color: #ffffff;
+}
+
+footer .container .list_footer .lists_footer ul li a i {
+  margin-right: 5px;
+}
+footer .container .list_footer .lists_footer span {
+  font-weight: 600;
+  font-size: 15px;
+}
+
+footer .copy_right {
+  background-color: #4a47aa;
+  overflow: hidden;
+  height: 50px;
+}
+
+footer .copy_right p {
+  float: left;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 600;
+  margin-top: 20px;
+}
+
+footer .copy_right ul {
+  float: right;
+  margin-top: 16px;
+}
+
+footer .copy_right ul li {
+  display: inline-block;
+  color: #ffffff;
+  margin-left: 15px;
+}
+
+footer .copy_right ul li a {
+  font-size: 13px;
+  font-weight: 600;
+  color: #ffffff;
+}
+footer .container .list_footer .lists_footer .logo img {
+  padding: 20px 0px 10px;
+  width: 50%;
+}
+footer .container .list_footer .lists_footer .logo ul :nth-child(1) a:hover {
+  background-color: #ffffff;
+  color: #5451c1;
+  transition-duration: 00.3s;
+}
+footer .container .list_footer .lists_footer .logo ul :nth-child(2) a:hover {
+  border-radius: 40px;
+  background-color: #fff;
+
+  color: #d6249f;
+
+  transition-duration: 00.3s;
+}

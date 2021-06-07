@@ -21,4 +21,9 @@ Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-
+Route::get('/a', function () {
+    return view('web/templateapp');
+});
+Route::get('/b', function () {
+    return view('web/templateweb');
+});

@@ -1,0 +1,382 @@
+
+
+
+/*--------------------------------started-main-------------------------------*/
+
+/*******************start about us photo*******************************/
+body {
+	overflow-x: hidden;
+}
+main .aboutus {
+	background-color: #ffffff;
+	height: 600px;
+	
+	
+}
+main .aboutus .container_aboutus{
+	background-color: #f6f6fc;
+	height: 550px;
+	
+}
+main .aboutus .container_aboutus .aboutus_section .img1 img {
+    width: 30%;
+	padding-top: 150px;
+   float: left;
+   margin-left: 10px;
+	
+}
+main .aboutus .container_aboutus .aboutus_section .img3 img {
+    width: 30%;
+	padding-top: 150px;
+	float: right;
+	margin-right: 10px;
+
+}
+main .aboutus .container_aboutus .aboutus_section .img2 img {
+	width: 30%;
+    margin-left: 60px;
+	padding-top: 170px;	
+}
+/* Opacité 
+main .aboutus .container_aboutus .aboutus_section img {
+	opacity: 1;
+	-webkit-transition: 0s ;
+	transition: 0s ;
+}
+main .aboutus .container_aboutus .aboutus_section :hover img {
+	opacity: .5;
+}*/
+
+main .aboutus .container_aboutus .aboutus_section  img {
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: 0s ;
+	transition: 1s;
+	transition-duration: 2s;
+
+}
+main .aboutus .container_aboutus .aboutus_section :hover img {
+	-webkit-transform: scale(1.3);
+	transform: scale(1.3);
+}
+
+/*******************end about us photo******************/
+
+/*******************start about us texte******************/
+
+main .aboutus2{
+	background-color: #ffffff;
+	padding-top: 280px;
+	height: 150px;
+	opacity: 70%;
+		
+}
+main .aboutus2 .aboutsection {
+	background-color: #fffffff8;
+	padding-top: 50px;
+	height: 100px;
+	
+	
+			
+}
+
+main .aboutus2 .aboutsection .texte {
+	margin-top: 20px;
+	float: left;
+	text-align: left;
+	margin-left: -25px;
+	opacity: 100%;
+
+}
+main .aboutus2 .aboutsection .texte1 {
+	margin-top: 20px;
+	
+}
+
+main .aboutus2 .aboutsection .texte h1{
+	
+	padding: 0px 0px 0px 400px  ;
+	margin: -250px;
+	color : #000000 ;
+	font-size: 50px;
+	font-weight: 600;
+    
+}
+main .aboutus2 .aboutsection .texte h2{
+	
+	padding-left: 190px;
+	padding-top: 270px;
+	padding-bottom: 0px;
+	color : #000000 ;
+	font-size: 30px;
+	font-weight: 600;
+    
+}
+main .aboutus2 .aboutsection .texte h3{
+	
+	padding-left: 230px;
+	padding-top: 15px;
+	color : #000000 ;
+	font-size: 20px;
+	font-weight: 600;
+    
+}
+
+
+ main .aboutus2 .aboutsection .texte1 .p1{
+	 margin-top: -300px;
+	 margin-left: 100px ;
+	 position:absolute;
+	 left: 580px;
+     white-space: nowrap;
+     animation: floatText 10s  ;
+	 font-size: 1.2em;
+	 color: black;
+	 letter-spacing: 3px;
+}
+
+@-webkit-keyframes floatText{
+	
+  from {
+
+   left: 800px;
+	
+  }
+	to {
+		 right: 650px;
+  }
+  } 
+/*******************end about us texte****************************/
+/*-----------------------------start-our_team_section---------------------------*/
+main .our_team {
+	background-color: #F6F6FC;
+	padding: 40px 0px 90px;
+	margin-left: -100px;
+	margin-right: -100px;
+	margin-bottom: 40px;
+}
+main .our_team .container .team_section {
+	display:flex ;
+	justify-content: space-between;
+	align-items:center; 
+}
+main .our_team .container .team_section .team_content  {
+	margin-top: 80px;
+	position: relative;
+	width: 18%;
+	height: 350px;
+	border-radius: 30px;
+	text-align: center;
+	background-color: #FFFFFF;
+	box-shadow: 2px 2px 20px #c7c7c7;
+	
+}
+
+
+
+main .our_team .container .team_section .team_content:hover  {
+	
+	width: 20%;
+	
+	box-shadow: 3px 3px 35px black;
+		 
+}
+
+main .our_team .container .team_section .team_content h2 {
+	margin-top: 110px;
+	line-height: 40px;
+	color: #434964;
+	font-size: medium;
+	
+}
+main .our_team .container .team_section .team_content p {
+	font-size: 14px;
+	font-weight: 600;
+	line-height: 40px;
+	color: #434964;
+	
+}
+
+
+
+
+
+main .our_team .container .team_section .team_content ul li {
+	display: inline-block;
+	margin-right:  5px;
+	margin-top: 15px;
+	width: 30px;
+	height: 30px;
+	border: 1px solid #5551C1;
+	border-radius: 50%;
+
+}
+
+main .our_team .container .team_section .team_content ul li i {
+	
+	margin-top: 7px;
+	color: #5551C1;
+}
+
+
+main .our_team .container .team_section .team_content .img_team{
+	position:absolute;
+	top: 35%;
+	left: 50%;
+	transform: translate(-50%,-100%);
+	
+	
+	
+
+}
+
+main .our_team .container .team_section .team_content .img_team img{
+	display: block;
+	margin: 0px auto;
+	border-radius: 50%;
+	width: 160px;
+	border: 10px solid #FFFFFF;
+}
+main .our_team .container .team_section .team_content .img_team img:hover {
+	
+	width: 200px;
+}
+
+/*-----------------------------end-our_team_section---------------------------*/
+
+
+
+
+/*-----------------------------start-Feadback_section---------------------------*/
+main .feadback {
+	background-image: url(../../page_p%20-%20Copie/img/backg/bac.jpg);
+	background-size: cover;
+	position:relative;
+	z-index: 1;
+	padding-bottom: 50px;
+	padding-top: 20px;
+	margin-bottom: 90px;
+	margin-top: 100px;
+}
+
+main .feadback .title h2 {
+	color: #fff;
+}
+main .feadback .title h3 {
+	color: #fff;
+	margin-top: 20px;
+}
+
+
+main .feadback::after {
+	position: absolute;
+	content: "";
+	top:0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-color: #5451C1;
+	opacity: 0.8;
+	z-index: -1;
+}
+
+main .feadback .feadback_section{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 100px;
+
+	
+}
+
+main .feadback .feadback_section .feadback_content{
+	width: 48%;
+	text-align: center;
+	background-color: #ffffff;
+	position: relative;
+	border-radius: 200px;
+	letter-spacing: 1px;
+	box-shadow: 0px 8px 0px 3px #ADACE1; 
+	
+	
+}
+
+main .feadback .feadback_section .feadback_content h2{
+	color: #434964;
+	margin-top: 70px;
+	font-size: 18px;
+	
+}
+main .feadback .feadback_section .feadback_content span{
+	color: #5451C1;
+	font-size: 14px;
+	font-weight: 600;
+	line-height: 30px;
+	
+	
+	
+}
+main .feadback .feadback_section .feadback_content p{
+	
+	width: 80%;
+	font-weight: 600;
+	margin: 13px auto 5px;
+	color: #434964;
+	font-size: 14px;
+	line-height: 25px;
+	
+}
+
+main .feadback .feadback_section .feadback_content a{
+	display: inline-block;
+	color: #5451C1;
+	margin: 5px 5px 20px;
+	width: 30px;
+	height: 30px;
+	border: 1px solid #5451C1;
+	border-radius: 50%;
+	
+	
+}
+
+main .feadback .feadback_section .feadback_content i{
+	
+	margin-top: 7px;
+	
+}
+
+
+
+
+
+main .feadback .feadback_section .feadback_content .img_feadback{
+	position: absolute;
+	top: 25%;
+	left: 50%;
+	transform: translate(-50%,-100%);
+	width: 120px;
+	
+	
+}
+
+main .feadback .feadback_section .feadback_content .img_feadback img{
+	width: 100%;
+	border-radius: 50%;
+	border: 8px solid #fff;
+	
+}
+
+/*-----------------------------end-Feadback_section---------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
