@@ -16,9 +16,8 @@ class CreateRendezvousesTable extends Migration
         Schema::create('rendezvouses', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
-            $table->char('name',20);
+            $table->string('contact_pseudo',20);
             $table->date('date');
-            $table->text('description');
             $table->time('heurs');
             $table->integer('commande_id')->unsigned();
             $table->foreign('commande_id')->references('id')->on('commandes');

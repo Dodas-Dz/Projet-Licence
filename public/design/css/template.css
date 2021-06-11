@@ -1,0 +1,201 @@
+@charset "utf-8";
+
+/* CSS Document */
+
+/*--------------------------------------all------------------------------------*/
+nav.primary-navigation {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0 0 340px;
+  text-align: right;
+  font-size: 16px;
+}
+/*-----------------------------------end-header-------------------------------*/
+
+/*--------------------------------started-main-------------------------------*/
+/*main {}*/
+
+/*----------------------------started-home_section---------------------------*/
+main .home {
+  background-color: #5451c1;
+  height: 80vh;
+}
+main {
+  overflow-x: hidden;
+}
+main .home .home_section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 100vh;
+
+  width: 100%;
+}
+main .home .home_section .home_content {
+  width: 40%;
+  margin-top: -75px;
+}
+
+main .home .home_section .home_content .H1 {
+  padding-bottom: 20px;
+  font-size: 3.3rem;
+}
+main .home .home_section .home_content h2 {
+  color: #fbff00;
+
+  font-size: 2.5rem;
+}
+main .home .home_section .home_content > h1 .size {
+  color: #ffffff;
+  margin-left: 15px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  font-size: 35px;
+}
+main .home .home_section .home_content > p {
+  color: #ffffff;
+  margin-left: 15px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  font-weight: 600;
+  font-size: 30px;
+}
+
+main .home .home_section .home_content h1 {
+  color: #fbff00;
+  font-size: 50px;
+}
+main .home .home_section .home_content a {
+  display: inline-block;
+  padding: 15px 40px;
+  border-radius: 30px;
+  border: 1px solid #fff;
+  margin-right: 20px;
+  font-weight: 600;
+  color: #fff;
+  margin-top: 30px;
+  font-size: 15px;
+}
+/*------------------------------ start service description-----------------------------------------------------*/
+
+/*---------------------------------end service description----------------*/
+
+main .home .home_section .img {
+  width: 50%;
+  margin-top: -80px;
+  padding-left: -80px;
+}
+
+main .home .home_section .img img {
+  width: 570px;
+}
+
+/*-------------------------------end-home_section-----------------------------*/
+
+/*-------------------------------template----------------------------------*/
+
+/**-----------------------------hoooover-------------------------**/
+
+/*---------------------------------------------------------------------*/
+/*-----------------------------start-pricing_section---------------------------*/
+main .pricing {
+  padding: 40px 0px;
+}
+
+main .pricing .container .prcing_section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+main .pricing .container .prcing_section .pricing_plans {
+  position: relative;
+  width: 30%;
+  /*	text-align: center;*/
+  overflow: hidden;
+  border-radius: 30px;
+  box-shadow: 2px 2px 20px #9b9b9b;
+  height: 520px;
+}
+
+main .pricing .container .prcing_section .pricing_plans .img_pricing {
+  z-index: -1;
+}
+
+main .pricing .container .prcing_section .pricing_plans .img_pricing img {
+  width: 150%;
+  margin: -15% 0px 0px -20%;
+}
+
+main .pricing .container .prcing_section .pricing_plans .info_pricing {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+main .pricing .container .prcing_section .pricing_plans .info_pricing h2 {
+  padding: 20px;
+  text-align: justify;
+  color: #ffffff;
+  width: 100%;
+}
+
+main .pricing .container .prcing_section .pricing_plans .info_pricing h3 {
+  font-size: 60px;
+  text-align: right;
+  padding-right: 20px;
+  color: #ffffff;
+}
+
+main .pricing .container .prcing_section .pricing_plans .info_pricing h4 {
+  text-align: left;
+  padding: 6px 20px;
+  display: inline-block;
+  border: 1px solid #434964;
+  border-radius: 30px;
+  color: #434964;
+  font-size: 14px;
+  margin: 13px 20px;
+}
+
+main .pricing .container .prcing_section .pricing_plans .info_pricing ul {
+  text-align: center;
+  padding: 30px 0px;
+}
+
+main .pricing .container .prcing_section .pricing_plans .info_pricing ul li {
+  padding-top: 20px;
+  line-height: 30px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #434964;
+}
+
+main .pricing .container .prcing_section .pricing_plans .info_pricing ul li a {
+  display: inline-block;
+  font-size: 17px;
+  font-weight: 600;
+  padding: 3px 30px;
+  padding-top: 0.7rem;
+  padding-bottom: 0.7rem;
+  margin-top: 10px;
+  border: 0.8px solid #5451c1;
+  box-shadow: #5451c1;
+  border-radius: 10rem;
+  color: #5451c1;
+}
+main .pricing .container .prcing_section .pricing_plans .info_pricing .prc-btn {
+  background-color: #5451c1;
+  height: 5rem;
+  color: #fff;
+}
+
+/*-----------------------------end-pricing_section---------------------------*/
+
+/*-----------------------------start-our_team_section---------------------------*/
+
+/*--------------------------------start footer-------------------------------*/

@@ -15,9 +15,8 @@ class CreateTvasTable extends Migration
     {
         Schema::create('tvas', function (Blueprint $table) {
             $table->id();
-            $table->timestamps();
-            $table->date('date_rendez_vous');
             $table->double('pourcentage', 15, 8);
+            $table->timestamps();
             
         });
     }

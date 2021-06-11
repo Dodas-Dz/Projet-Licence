@@ -15,10 +15,11 @@ class CreatePackesTable extends Migration
     {
         Schema::create('packes', function (Blueprint $table) {
             $table->id();
-            $table->timestamps();
-            $table->char('name', 20);
+            $table->string('nom', 20);
             $table->integer('prix');
-            
+            $table->integer('service_id')->unsigned();
+            $table->foreign('service_id')->references('id')->on('services');
+            $table->timestamps();
 
         });
     }

@@ -14,11 +14,15 @@ class ServiceController extends Controller
      */
     public function index_web()
     {
-        return view('/web/webdev');
+        return view('web\pages\introduction\site');
     }
     public function index_app()
     {
-        return view('/web/appdev');
+        return view('web\pages\introduction\app');
+    }
+    public function index_des()
+    {
+        return view('web\pages\introduction\design');
     }
    /* <public function index_design()
     {

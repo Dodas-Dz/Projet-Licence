@@ -1,0 +1,396 @@
+@charset "utf-8";
+form .formulaire {
+  margin-bottom: 10%;
+}
+form .formulaire {
+  margin-top: 60px;
+  align-items: center;
+  padding-right: 400px;
+  padding-left: 200px;
+  padding-top: 40px;
+  width: 300px;
+  height: 990px;
+  background-color: #f6f6fc;
+  border: 0.5px solid #d2d2d3;
+  margin-left: 225px;
+  border-radius: 50px;
+  box-shadow: 5px 5px 10px lightgrey;
+}
+form .inputs {
+  padding-left: 30px;
+}
+.page {
+  margin-top: 10rem;
+  margin-bottom: 5rem;
+}
+form .formulaire .formulaire1 {
+  width: 500px;
+  size: 80px;
+  margin-bottom: 40px;
+  margin-left: 95px;
+}
+form .formulaire .formulaire1 h3 {
+  font-size: 15px;
+  font-family: "Lato", sans-serif;
+  letter-spacing: 3px;
+  text-align: center;
+  color: #5451ca;
+  margin-left: -70px;
+  margin-right: 150px;
+  margin-bottom: 10px;
+  text-shadow: 1px 1px 3px lightgrey;
+  opacity: 80%;
+}
+form .formulaire .formulaire1 h1 {
+  width: 600px;
+
+  font-size: 28px;
+  font-family: "Lato", sans-serif;
+  letter-spacing: 8px;
+  text-align: center;
+  color: #36363a;
+  /*padding-left: 10px;*/
+
+  margin-left: -150px;
+  margin-right: 300px;
+  text-shadow: 1px 1px 3px lightgrey;
+  opacity: 80%;
+}
+
+form .formulaire .formulaire1 h1 span {
+  font-size: 25px;
+  font-family: "Lato", sans-serif;
+  letter-spacing: 8px;
+  text-align: center;
+  color: #5451c1;
+  margin-right: 10px;
+  text-shadow: 1px 1px 3px lightgrey;
+  opacity: 80%;
+}
+
+form .formulaire .formulaire2 > input {
+  cursor: pointer;
+  width: 370px;
+  margin-top: 20px;
+  border: none;
+  border-radius: 50px;
+  padding: 20px 30px 15px;
+  margin-right: 150px;
+  position: center;
+
+  font-size: 15px;
+  font-family: "Lato", sans-serif;
+  letter-spacing: 3px;
+  text-align: initial;
+  box-shadow: 2px 2px 5px lightgrey;
+  opacity: 100%;
+}
+form .formulaire .formulaire2 > input:hover {
+  background-color: rgb(240, 233, 233);
+  border: 1px solid #999;
+  border-radius: 50px;
+}
+form .formulaire .formulaire2 > input:focus {
+  border: 1px solid #999;
+  border-radius: 50px;
+}
+
+form .formulaire .formulaire6 > input {
+  cursor: pointer;
+  width: 362px;
+  margin-top: 20px;
+  border: none;
+  border-radius: 50px;
+  padding: 20px 30px 15px;
+  margin-right: 150px;
+  position: center;
+
+  font-size: 15px;
+  font-family: "Lato", sans-serif;
+  letter-spacing: 3px;
+  text-align: initial;
+  box-shadow: 2px 2px 5px lightgrey;
+  opacity: 100%;
+}
+
+form .formulaire .formulaire6 > input:hover {
+  background-color: rgb(240, 233, 233);
+  border: 1px solid #999;
+  border-radius: 50px;
+}
+form .formulaire .formulaire6 > input:focus {
+  border: 1px solid #999;
+  border-radius: 50px;
+}
+
+form .formulaire .formulaire3 > select {
+  cursor: pointer;
+  width: 430px;
+  padding: 20px 30px 15px;
+  margin-top: 30px;
+  border: none;
+  border-radius: 50px;
+  position: center;
+  margin-right: 150px;
+  background-color: #ffffff;
+  outline: none;
+
+  font-size: 15px;
+  font-family: "Lato", sans-serif;
+  letter-spacing: 3px;
+  text-align: initial;
+  color: rgb(110, 108, 108);
+  opacity: 100%;
+  box-shadow: 2px 2px 5px lightgrey;
+}
+
+form .formulaire .formulaire3 > select:hover {
+  background-color: rgb(245, 241, 245);
+  border: 1px solid #999;
+  border-radius: 50px;
+}
+
+form .formulaire .formulaire3 > select > option {
+  width: 100px;
+  cursor: inherit;
+  font-weight: 15px;
+  font-size: 18px;
+  font-family: "Lato", sans-serif;
+  letter-spacing: 2px;
+  text-align: inherit;
+  color: rgb(88, 85, 85);
+  text-shadow: 00.5px 0.5px 2px lightgrey;
+}
+form .formulaire .formulaire3 .fonts :nth-child(2) {
+  font-family: Arial, Helvetica, sans-serif;
+}
+form .formulaire .formulaire3 .fonts :nth-child(3) {
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+form .formulaire .formulaire3 .fonts :nth-child(4) {
+  font-family: "Times New Roman", Times, serif;
+}
+form .formulaire .formulaire3 .fonts :nth-child(5):disabled {
+  font-family: Arial, Helvetica, sans-serif;
+}
+form .formulaire .formulaire3 .fonts :nth-child(6) {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+form .formulaire .formulaire3 .fonts :nth-child(7) {
+  font-family: "Courier New", Courier, monospace;
+}
+form .formulaire .formulaire3 .fonts :nth-child(8) {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+form .formulaire .formulaire3 .fonts :nth-child(9) {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+form .formulaire .formulaire3 > option:hover {
+  background-color: rgb(245, 241, 245);
+  border: 1px solid #999;
+  border-radius: 50px;
+}
+
+form .formulaire .formulaire5 > textarea {
+  cursor: pointer;
+  width: 410px;
+  height: 200px;
+  margin-top: 30px;
+  border-radius: 30px;
+  padding-left: 20px;
+  padding-top: 15px;
+  border: none;
+  font-size: 15px;
+  font-family: "Lato", sans-serif;
+  letter-spacing: 3px;
+  text-align: initial;
+  color: rgb(110, 108, 108);
+  opacity: 100%;
+  box-shadow: 2px 2px 5px lightgrey;
+}
+
+form .formulaire .formulaire5 > textarea:hover {
+  background-color: rgb(245, 241, 245);
+  border: 1px solid #999;
+  border-radius: 50px;
+}
+
+form .formulaire .formulaire5 textarea :after {
+  font-size: 25px;
+  font-family: "Lato", sans-serif;
+  color: #000000;
+  letter-spacing: 3px;
+  text-align: initial;
+}
+
+form .formulaire .formulaire4 > button {
+  background-color: rgb(73, 220, 177);
+  width: 200px;
+  height: 50px;
+  border-radius: 30px;
+  margin-left: 150px;
+  padding-left: 55px;
+  cursor: pointer;
+  order: none;
+  border: none;
+
+  margin-top: 50px;
+  margin-bottom: 10px;
+  box-shadow: 5px 5px 10px #999;
+
+  font-size: 25px;
+  font-family: "Lato", sans-serif;
+  letter-spacing: 2px;
+  text-align: start;
+  color: rgb(255, 255, 255);
+  font-weight: 500;
+  font-variant-position: inherit;
+}
+form .formulaire .formulaire4 > button:hover {
+  background-color: rgb(248, 248, 248);
+  transform: translateY(5px);
+  transform: translateX(5px);
+  color: rgb(100, 200, 120);
+  text-shadow: 2px 2px 3px #999;
+}
+
+/*-----------------------------start-pricing_section---------------------------*/
+main .pricing {
+  padding: 20px 0px;
+}
+
+main .pricing .container .title h3 {
+  font-size: 20px;
+  font-family: "Lato", sans-serif;
+  letter-spacing: 8px;
+  margin-top: 0px;
+  margin-left: 190px;
+  width: 50%;
+  text-align: center;
+}
+main .pricing .container .title h2 {
+  font-size: 28px;
+  font-family: "Lato", sans-serif;
+  letter-spacing: 8px;
+  margin-left: 190px;
+  width: 50%;
+  text-align: center;
+}
+
+main .pricing .container .prcing_section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+main .pricing .container .prcing_section .pricing_plans {
+  position: relative;
+  width: 30%;
+  /*	text-align: center;*/
+  overflow: hidden;
+  border-radius: 30px;
+  box-shadow: 2px 2px 20px #c7c7c7;
+  height: 600px;
+}
+
+main .pricing .container .prcing_section .pricing_plans .img_pricing {
+  z-index: -1;
+}
+
+main .pricing .container .prcing_section .pricing_plans .img_pricing img {
+  width: 150%;
+  margin: -15% 0px 0px -20%;
+}
+
+main .pricing .container .prcing_section .pricing_plans .info_pricing {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+main .pricing .container .prcing_section .pricing_plans .info_pricing h2 {
+  padding: 20px;
+  text-align: justify;
+  color: #ffffff;
+  width: 100%;
+}
+
+main .pricing .container .prcing_section .pricing_plans .info_pricing h3 {
+  font-size: 30px;
+  text-align: right;
+  padding-right: 20px;
+  color: #ffffff;
+}
+
+main .pricing .container .prcing_section .pricing_plans .info_pricing h4 {
+  text-align: left;
+  padding: 6px 20px;
+  display: inline-block;
+  border: 1px solid #434964;
+  border-radius: 30px;
+  color: #434964;
+  font-size: 14px;
+  margin: 13px 20px;
+}
+
+main .pricing .container .prcing_section .pricing_plans .info_pricing ul {
+  text-align: center;
+  padding: 30px 0px;
+  margin-top: 80px;
+}
+
+main .pricing .container .prcing_section .pricing_plans .info_pricing ul li {
+  line-height: 40px;
+  font-size: 17px;
+  font-weight: 600;
+  color: #434964;
+}
+main
+  .pricing
+  .container
+  .prcing_section
+  .pricing_plans
+  .info_pricing
+  ul
+  li
+  .check {
+  line-height: 40px;
+  font-size: 17px;
+  font-weight: 600;
+  color: #10b14e;
+}
+
+main
+  .pricing
+  .container
+  .prcing_section
+  .pricing_plans
+  .info_pricing
+  ul
+  li
+  .null {
+  line-height: 40px;
+  font-size: 17px;
+  font-weight: 600;
+  color: #d41010;
+}
+main .pricing .container .prcing_section .pricing_plans .info_pricing ul li a {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 3px 30px;
+  margin-top: 25px;
+  border: 1px solid #434964;
+  box-shadow: #5451c1;
+  border-radius: 30px;
+  color: #434964;
+}
+main .pricing .container .prcing_section .pricing_plans .info_pricing .prc-btn {
+  background-color: #5451c1;
+  color: #fff;
+}
+/*-----------------------------end-pricing_section---------------------------*/

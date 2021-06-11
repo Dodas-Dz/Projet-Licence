@@ -223,7 +223,7 @@ form .formulaire .formulaire5 textarea :after {
   text-align: initial;
 }
 
-form .formulaire .formulaire4 > button {
+form .formulaire .formulaire4 a > button {
   background-color: rgb(73, 220, 177);
   width: 200px;
   height: 50px;
@@ -246,7 +246,7 @@ form .formulaire .formulaire4 > button {
   font-weight: 500;
   font-variant-position: inherit;
 }
-form .formulaire .formulaire4 > button:hover {
+form .formulaire .formulaire4 a button:hover {
   background-color: rgb(248, 248, 248);
   transform: translateY(5px);
   transform: translateX(5px);

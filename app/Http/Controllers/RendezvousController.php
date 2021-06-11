@@ -14,7 +14,7 @@ class RendezvousController extends Controller
      */
     public function index()
     {
-        //
+        return view('/web/rendezvous/rendez-vous');
     }
 
     /**
