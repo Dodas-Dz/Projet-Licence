@@ -29,7 +29,7 @@ integrity="sha384-wESLQ85D6gbsF459vf1CiZ2+rr+CsxRY0RpiF1tLlQpDnAgg6rwdsUF1+Ics2b
 <main>
 	<section class="grandtitle">
 		<h3> Rendez-vous</h3>
-		 <h1>Prise de <span> Rendez-vous </span></h1>
+		 <h1>Prise de <span> Rendez-vous  </span></h1>
 
 	</section>
 	<form id="login" name="formulaire" onsubmit=" return Confirmersaisie()" action="/action_page.php">
@@ -38,7 +38,7 @@ integrity="sha384-wESLQ85D6gbsF459vf1CiZ2+rr+CsxRY0RpiF1tLlQpDnAgg6rwdsUF1+Ics2b
  <div class="formulaire">
 
 		  <div class="title">
-            <h1 >Formulaire</h1>
+            <h1 >Formulaire Id commande</h1>
           </div>
 
 <div class="input">

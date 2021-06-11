@@ -23,8 +23,9 @@ Route::get('/mycommande', function () {
 Route::get('/rendezvouss', [App\Http\Controllers\RendezvousController::class, 'index'])->name('rendezvous');
 /***********************************************commande***************************************************************************************** */
 route::post('/templateweb', [App\Http\Controllers\CommandesController::class, 'store'])->name('commande');
-route::post('/templateapp', [App\Http\Controllers\CommandesController::class, 'store'])->name('commande');
+route::post('/templateapp', [App\Http\Controllers\CommandesController::class, 'commandeapp'])->name('commandeapp');
 
+route::post('/templatedesign', [App\Http\Controllers\CommandesController::class, 'commandedesign'])->name('commandedesign');
 /**************************************************template************************************************************************************** */
 /*Route::get('/template/{item}', function ($item) {
     return view("web/templateweb/".$item);

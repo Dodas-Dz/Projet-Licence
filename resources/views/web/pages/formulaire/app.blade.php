@@ -279,7 +279,7 @@
 
 <!---------------start saisi formu------------->
 
-<form  action="{{ route('commande') }}" method="post">
+<form  action="{{ route('commandeapp') }}" method="post">
 
 	<section class="formulaire">
 	
@@ -361,12 +361,14 @@
 	
 		  </div>
 	  </div>
-	  <div class="formulaire5"  name="description" id="description" class="form-control">
-	  <textarea placeholder="Plus de details"></textarea>
+	  <div class="formulaire5"   class="form-control">
+	  <textarea name="description" id="description" placeholder="Plus de details"></textarea>
 	</div>
 </div>
 	  <div class="formulaire4">
-		<button type="submit"> Valider  </button>
+			<a>
+		<button type="submit" > Valider  </button>
+        </a>
 	  </div>
 	</div> 
 </section>

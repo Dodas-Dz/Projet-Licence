@@ -61,18 +61,71 @@ class CommandesController extends Controller
         $commandes->id;
        
         //redirect view('rendezvous')->with('id',$commandes->id)
-        return redirect('rendezvouss');
+        return redirect('rendezvouss')->with('id',$commandes->id);
     
     }
     
     //protected function makeRDV(id)
-    public function store2(Request $request)
-    { dd();
-     
+    public function commandeapp(Request $request)
+    {  $request->validate([
+        'name'=>'required',
+        'couleur1'=>'required',
+        'couleur2'=>'required',
+        'tamplate'=>'required',
+        'type'=>'required',
+        'pack'=>'required',
+        'police'=>'required',
+        'description'=>'required',
+
+    ]);
+        
+        $commandes =new Commande;
+        $commandes->name=$request->input('name');
+        $commandes->couleur=$request->input('couleur1');
+        $commandes->couleur1=$request->input('couleur2');
+        $commandes->tamplate=$request->input('tamplate');
+        $commandes->type=$request->input('type');
+        $commandes->police=$request->input('police');
+        $commandes->packes_id=$request->input('pack');
+        $commandes->description=$request->input('description');
+        $commandes->user_id=Auth()->user()->id;
+        $commandes->service_id='002';
+        $commandes->save();
+        $commandes->id;
+       
+        //redirect view('rendezvous')->with('id',$commandes->id)
+        return redirect('rendezvouss')->with('id',$commandes->id);
     }
-    public function store3(Request $request)
-    {  echo('hello');
-    
+    public function commandedesign(Request $request)
+
+    { 
+        $request->validate([
+        'name'=>'required',
+        'couleur1'=>'required',
+        'couleur2'=>'required',
+        'type'=>'required',
+        'pack'=>'required',
+        'police'=>'required',
+        'description'=>'required',
+
+    ]);
+        
+        $commandes =new Commande;
+        $commandes->name=$request->input('name');
+        $commandes->couleur=$request->input('couleur1');
+        $commandes->couleur1=$request->input('couleur2');
+        $commandes->tamplate='NULL';
+        $commandes->type=$request->input('type');
+        $commandes->police=$request->input('police');
+        $commandes->packes_id=$request->input('pack');
+        $commandes->description=$request->input('description');
+        $commandes->user_id=Auth()->user()->id;
+        $commandes->service_id='003';
+        $commandes->save();
+        $commandes->id;
+       
+       
+        return redirect('rendezvouss')->with('id',$commandes->id);
     }
     /**
      * Display the specified resource.

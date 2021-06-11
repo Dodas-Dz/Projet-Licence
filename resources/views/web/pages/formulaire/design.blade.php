@@ -318,7 +318,7 @@
 
 <!---------------start saisi formu------------->
 
-<form>
+<form  action="{{ route('commandedesign') }}" method="post">
 
 	<section class="formulaire">
 	
@@ -331,7 +331,7 @@
 
 		<div class=inputs>
 	<div class="formulaire2">
-		<input type="text" placeholder="Enter nom projet">
+		<input type="text" placeholder="Enter nom projet" name="name" id="name" class="form-control" required>
 
 	</div>
 
@@ -341,7 +341,7 @@
 	
 		
 		
-		<input  data-jscolor="{position:'center'}">
+		<input  data-jscolor="{position:'center'}" name="couleur1" id="couleur1" class="form-control">
 	 
 	</div>
 	<div class="formulaire6">
@@ -349,7 +349,7 @@
 		
 		
 		
-		<input placeholder="Entrer couleur secondaire" data-jscolor="{position:'center'}">
+		<input placeholder="Entrer couleur secondaire" data-jscolor="{position:'center'}"  name="couleur2" id="couleur2" class="form-control">
 	 
 	</div>
 
@@ -359,12 +359,12 @@
 
 		<div class="formulaire3">
 
-		<select>
+		<select name="type" id="type" >
 				
 				 <option value="...."> Choisissez un thème</option>
 				 <option value="Restauration & food">Restauration & food</option>
 				 <option value="Vêtement & mode">Vêtement & mode</option>
-				 <option value="Santé">Santé</option>
+				 <option value="Sante">Santé</option>
 				 <option value="Environnement">Environnement</option>
 				 <option value="Art">Art</option>
 		</select>
@@ -374,15 +374,15 @@
 
 	  
 	  <div class="formulaire3">
-		<select>
+		<select name="pack" id="pack" class="form-control" required >
 			   <option value="....">Choisissez un pack</option>
-			   <option value="Basic">Basique</option>
-			   <option value="Advanced">Ilimité</option>
-			   <option value="Premium">Vip</option>
+			   <option value="001">Basique</option>
+			   <option value="002">Ilimité</option>
+			   <option value="003">Vip</option>
 			
 		</select>
 		<div class="formulaire3">
-			<select class="fonts">
+			<select name="police" id="police" class="form-control" class="fonts" required>
 				   <option value="....">Choisissez une police</option>
 				   <option value="Arial" disabled>Arial</option>
 				   <option value="Georgia" >Georgia</option>
@@ -397,12 +397,12 @@
 	
 		  </div>
 	  </div>
-	  <div class="formulaire5">
-	  <textarea placeholder="Plus de details"></textarea>
+	  <div class="formulaire5" >
+	  <textarea name="description" id="description" placeholder="Plus de details"></textarea>
 	</div>
 </div>
 	  <div class="formulaire4">
-		<button type="submit"> Valider  </button>
+		<a><button type="submit"> Valider  </button><a>
 	  </div>
 	</div> 
 </section>
