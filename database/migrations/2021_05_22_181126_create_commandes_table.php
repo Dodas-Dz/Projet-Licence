@@ -23,13 +23,14 @@ class CreateCommandesTable extends Migration
             $table->string('type',20);
             $table->string('police',20);
             $table->Text('description');
+            
             $table->integer('user_id')->unsigned();
             $table->foreign('user_id')->references('id')->on('users');
             $table->integer('packes_id')->unsigned();
             $table->foreign('packes_id')->references('id')->on('packes');
             $table->integer('service_id')->unsigned();
             $table->foreign('service_id')->references('id')->on('services');
-          
+            $table->string('etat', 20)->default('avant rendez_vous');
           
         });
     }

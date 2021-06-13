@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>Design</title>
+<title>Zyrah | commande </title>
 
 <link href="{{asset('templatedes/css/template.css')}}" rel="stylesheet">	
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.css" rel="stylesheet" />
@@ -16,7 +16,8 @@
 <link rel="stylesheet" href="{{asset('templatedes/css/headerfooter.css')}}">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/themes/monolith.min.css"/>
 <link rel="stylesheet" href="{{asset('templatedes/css/templateslide.css')}}">
-<link rel="stylesheet" href="{{asset('templatedes/css/formulaire.css')}}">
+
+<link rel="stylesheet" href="{{asset('web/css/formulaire.css')}}">
 <script src="templatedes/js/miniprojet.js"></script>
 <link rel="stylesheet" href="{{asset('templatedes/colorpicker.css')}}">
 <script src="templatedes/js/jscolor.js"></script>

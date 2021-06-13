@@ -12,15 +12,16 @@
 <body>
 @include('layouts.header')
 
+   
+
     <main>
+    @foreach($commandes as $commande)
     <div class="containall">
 		<div class="text">
 			<h1 class="votre"> Votre  </h1><h1 class="command"> commandes</h1>
 		</div>
-
-
         <div class="commande">
-             <button class="accordion" class="id_commande" >#idcommande
+             <button class="accordion" class="id_commande" >Id commande={{$commande->id}}
              </button>
              <div class="panel">
                 <div class="dsc">
@@ -30,25 +31,15 @@
                     <b>Etat de commande </b>
                 </div>
                 <div class="values">
-                    <div class="nom_commande">Nom commande </div>
-                    <div class="date_commande">Date de commande </div>
-                     <div class="date_rdv">Date de rendez-vous </div>
-                     <div class="Etat">Etat de commande </div>
+                    <div class="nom_commande">{{$commande->name}} </div>
+                    <div class="date_commande">{{$commande->created_at}} </div>
+                     <div class="date_rdv">{{$commande->rendez_vous->date}} </div>
+                     <div class="Etat">{{$commande->etat}} </div>
                 </div>
-
-
             </div>
-  
-      
-
-
-
-
-
-
-
-
     </div>
+  
+ @endforeach
 </main>
 @include('layouts.footer')
   <script src="commande/js/command.js"></script>

@@ -2,6 +2,9 @@
 
 namespace App\Http\Controllers;
 use App\Models\Commande;
+use App\Models\User;
+use App\Models\RendezVous;
+use App\Models\Service;
 use Illuminate\Http\Request;
 
 class CommandesController extends Controller
@@ -14,7 +17,32 @@ class CommandesController extends Controller
      */
     public function index()
     {
-        //
+        
+    }
+    public function getMyCommandes()
+    {
+    
+        $commandes = Commande::where('user_id',Auth()->user()->id)
+                                ->with('rendez_vous')
+                                ->get();
+                      
+        return view('web.commandeuser',compact('commandes'));
+    }
+    public function deleteCommande($id)
+    {
+        $commande = Commande::find($id);
+        $commande->delete();
+        return back();
+    }
+    public function getCommandesAdmin()
+    {
+        $commandes = Commande::with('rendez_vous')
+                             ->with('user')
+                             ->with('service')
+                             ->get();
+                            
+                             
+        return view('web.commande_admin',compact('commandes'));
     }
 
     /**
@@ -34,37 +62,40 @@ class CommandesController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function store(Request $request)
-    {  $request->validate([
-        'name'=>'required',
-        'couleur1'=>'required',
-        'couleur2'=>'required',
-        'tamplate'=>'required',
-        'type'=>'required',
-        'pack'=>'required',
-        'police'=>'required',
-        'description'=>'required',
+ {              $request->validate([
+                    'name'=>'required',
+                    'couleur1'=>'required',
+                    'couleur2'=>'required',
+                    'tamplate'=>'required',
+                    'type'=>'required',
+                    'pack'=>'required',
+                    'police'=>'required',
+                    'description'=>'required',
 
-    ]);
-        
-        $commandes =new Commande;
-        $commandes->name=$request->input('name');
-        $commandes->couleur=$request->input('couleur1');
-        $commandes->couleur1=$request->input('couleur2');
-        $commandes->tamplate=$request->input('tamplate');
-        $commandes->type=$request->input('type');
-        $commandes->police=$request->input('police');
-        $commandes->packes_id=$request->input('pack');
-        $commandes->description=$request->input('description');
-        $commandes->user_id=Auth()->user()->id;
-        $commandes->service_id='001';
-        $commandes->save();
-        $commandes->id;
-       
-        //redirect view('rendezvous')->with('id',$commandes->id)
-        return redirect('rendezvouss')->with('id',$commandes->id);
+            ]);
+
+                $commandes =new Commande;
+                $commandes->name=$request->input('name');
+                $commandes->couleur=$request->input('couleur1');
+                $commandes->couleur1=$request->input('couleur2');
+                $commandes->tamplate=$request->input('tamplate');
+                $commandes->type=$request->input('type');
+                $commandes->police=$request->input('police');
+                $commandes->packes_id=$request->input('pack');
+                $commandes->description=$request->input('description');
+                $commandes->user_id=Auth()->user()->id;
+                $commandes->service_id='001';
+                $commandes->save();
+                $commandes->id;
+            
+            
+                return redirect()->route('rendezvous',$commandes->id);
     
     }
-    
+     public function rendez_vous(Request $request)
+     {  
+
+     }
     //protected function makeRDV(id)
     public function commandeapp(Request $request)
     {  $request->validate([
@@ -93,8 +124,7 @@ class CommandesController extends Controller
         $commandes->save();
         $commandes->id;
        
-        //redirect view('rendezvous')->with('id',$commandes->id)
-        return redirect('rendezvouss')->with('id',$commandes->id);
+        return redirect()->route('rendezvous',$commandes->id);
     }
     public function commandedesign(Request $request)
 
@@ -125,7 +155,7 @@ class CommandesController extends Controller
         $commandes->id;
        
        
-        return redirect('rendezvouss')->with('id',$commandes->id);
+        return redirect()->route('rendezvous',$commandes->id);
     }
     /**
      * Display the specified resource.

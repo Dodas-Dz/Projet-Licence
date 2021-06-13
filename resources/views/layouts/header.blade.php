@@ -18,10 +18,12 @@
                           
 					    </ul>	
 					</li>
-					
+		         @can('isUser')			
 					<li><a href="{{route('commandeuser')}}">commande</a></li>
-				
-					<li><a href="#">commande admin</a></li>
+					@endcan
+				@can('isAdmin')
+					<li><a href="{{route('commandeadmin')}}">commande admin</a></li>
+					@endcan
 					<li><a href="{{route('apropos')}}">A propos</a></li>
 					@guest
 				@if (Route::has('login') or Route::has('register'))

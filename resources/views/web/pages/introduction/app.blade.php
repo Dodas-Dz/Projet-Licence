@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>App Service</title>
+<title>Zyrah | App Service</title>
 <link href="{{asset('app/css/webdev.css')}}" rel="stylesheet">	
 <link rel="stylesheet" href="{{asset('app/css/all.min.css')}}">	
 <link rel="stylesheet" href="{{asset('app/css/responsive.css')}}">

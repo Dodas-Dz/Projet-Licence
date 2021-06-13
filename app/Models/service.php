@@ -10,10 +10,10 @@ class Service extends Model
     use HasFactory;
     protected $filable =["nom"];
     public function packs(){
-        return $this->hasMany('App\Pack');
+        return $this->hasMany('App\Models\Pack');
     }
-    public function Commande(){
-        return $this->belongsTo('App\Commande');
+    public function commande(){
+        return $this->belongsTo('App\Models\Commande');
     }
 
 }

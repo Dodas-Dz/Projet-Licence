@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="HandheldFriendly" content="true">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/headerfooter.css">
+    <link rel="stylesheet" href="css/command.css">
+	<link rel="stylesheet" href="css/all.min.css">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="css/fontawesome.min.css">
+    <title>Commande admin</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="head">
+                <div class="logo"> 
+            <img src="img/logo/zyrah.png" alt="logo">
+        </div>
+        
+        
+                <nav  class="primary-navigation">
+                    <ul>
+                      <li><a href="#">Acceuil</a></li>
+                      <li><a href="#">Services &dtrif;</a>
+                        <ul class="dropdown">
+                            <li><a href="../mini projet/webdev.html" >Site-web</a></li>
+                            <li><a href="../mini projetapp/appmobile.html">App-Mobile</a></li>
+                            <li><a href="../miniprojetdesign/design.html">Design</a></li>
+                          
+                        </ul>
+                      </li>
+                      <li><a href="#">commande</a></li>
+                      <li><a href="#">commande admin</a></li>
+                      <li><a href="#">Apropos</a></li>
+                      
+                    <li class="get_btn"><a href="#"> Déconecter </a></li>
+                    </ul>
+                  </nav>
+    
+            
+        </div>
+            
+            </div>
+        
+        
+        
+        
+        
+        
+    
+    </header>
+    <main>
+    <div class="containall">
+		<div class="text">
+			<h1 class="votre"> Votre  </h1><h1 class="command"> commandes</h1>
+		</div>
+
+
+        <div class="commande">
+			<div class="unecommande">
+				<div class="trash"><i class="fa fa-trash w3-large" onclick=""></i></div>
+             <button class="accordion" id="id_commande">
+				 <span>status : <span id="circle"></span></span>
+				 #costumer name , #service name
+				 
+             </button>
+             <div class="panel" id="panel">
+                <div class="dsc">
+					<b>Nom de client</b>
+                     <b>Nom commande </b>
+                    <b>Date de commande </b>
+                     <b>Date de rendez-vous </b>
+                    <b>Etat de commande </b>
+                </div>
+                <div class="values">
+					<div class="nom_client">Nom de client</div>
+                    <div class="nom_commande">Nom commande </div>
+                    <div class="date_commande">Date de commande </div>
+                     <div class="date_rdv">Date de rendez-vous </div>
+                     <div id="Etat">Etat de commande </div>
+                </div>
+
+				<div class="changedetat">
+					<label for="box1">Changer l'Etat de commande: </label>
+					<select id="box1" onChange="myNewFunction(this);">
+						<option value="">changer d'Etat</option>
+						<option value="pre">pre-rdv</option> 
+						<option value="onit">working on it</option>
+						<option value="done">done</option>
+						<option value="canceled">annulé</option>
+						<option value="waiting">attend de pay</option>
+					  </select>
+
+				</div>
+              </div>
+		   </div>
+		</div>
+
+
+
+
+
+
+
+
+    </div>
+</main>
+    <footer> 
+		<div class="subscribe">
+			<h2>Abonnez Nous</h2>
+			<input type="email" placeholder="Entrer votre Email">
+			<input type="button" value="Abonnez">
+		</div> 	
+			<div class="all">
+			<div class="container">
+				
+			<div class="list_footer">
+				<div class="lists_footer">
+					<div class="logo"> 
+						<img src="img/logo/zyrah.png" alt="logo">
+						<p>Nos réseaux sociaux :</p>
+					
+					
+					<ul>
+						<li ><a href="https://www.facebook.com/zyrah.grp/" target="_blank" ><i class="fab fa-facebook-f"></i></a></li>
+						
+						<li><a href="https://instagram.com/zyrah_grp?utm_medium=copy_link"target="_blank"><i class="fab fa-instagram"></i></a></li>
+						
+						
+					</ul>
+						</div>
+				</div>
+				
+				
+				<div class="lists_footer">
+					<h2>Services</h2>
+					<ul>
+						<li><a href="#"><i class="fas fa-caret-right"></i> Site-web </a></li>
+						<li><a href="#"><i class="fas fa-caret-right"></i> App-Mobile</a></li>
+						<li><a href="#"><i class="fas fa-caret-right"></i> Design</a></li>
+						
+					</ul>
+				</div>
+				
+				<div class="lists_footer">
+					<h2>Liens importants</h2>
+					<ul>
+						<li><a href="#"><i class="fas fa-caret-right"></i> Acceuil</a></li>
+						<li><a href="#"><i class="fas fa-caret-right"></i> Services</a></li>
+						<li><a href="#"><i class="fas fa-caret-right"></i> Commande</a></li>
+						<li><a href="#"><i class="fas fa-caret-right"></i> A propos</a></li>
+					</ul>
+				</div>
+				
+				<div class="lists_footer">
+					<h2>Adresse entreprise</h2>
+					<ul>
+						<li><span>Address:</span>Tlemcen,Algérie 13 000</li>
+						<li><span>Telephone:</span> +213 54 00 73 071</li>
+						<li><span>Email:</span> zyrahgroupe@gmail.com</li>
+						
+					</ul>
+				</div>
+				
+				
+				
+			</div>
+		</div>
+		</div>
+		
+		
+		<div class="copy_right">
+			<div class="container">
+			
+			<p>Copy-Right © 2021 Disigned By Zyrah.</p>
+			<ul>
+				<li><a href="#">Terms & Condition</a></li>
+				<li><a href="#">Privacy Policy</a></li>
+				
+			</ul>
+		
+		</div>
+	</div>
+	
+	
+	</footer>
+  <script src="js/command.js"></script>
+  <script src="js/miniprojet.js"></script>
+</body>
+</html>

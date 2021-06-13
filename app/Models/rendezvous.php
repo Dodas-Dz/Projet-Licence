@@ -7,10 +7,11 @@ use Illuminate\Database\Eloquent\Model;
 
 class RendezVous extends Model
 {
+    protected $table ="rendezvouses";
     use HasFactory;
     protected $filable =['contact_pseudo','date' ,'heurs', 'commande_id'];
     public function commande(){
-        return $this->belongsTo('App\Commande');
+        return $this->belongsTo('App\Models\Commande');
     }
     
 }

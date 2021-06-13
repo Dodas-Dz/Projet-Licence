@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>Rendez-vous</title>
+<title>Zyrah | Rendez-vous</title>
 <link href="{{asset('rendezvous/css/main.css')}}" rel="stylesheet">
 <link rel="stylesheet" href="{{asset('rendezvous/css/all.min.css')}}">
 <link rel="stylesheet" href="{{asset('rendezvous/css/respensive.css')}}">
@@ -32,13 +32,13 @@ integrity="sha384-wESLQ85D6gbsF459vf1CiZ2+rr+CsxRY0RpiF1tLlQpDnAgg6rwdsUF1+Ics2b
 		 <h1>Prise de <span> Rendez-vous  </span></h1>
 
 	</section>
-	<form id="login" name="formulaire" onsubmit=" return Confirmersaisie()" action="/action_page.php">
+	<form id="login" name="formulaire" onsubmit=" return Confirmersaisie()"  action="{{ route('rendez_vous') }}" method="post">
 		
     <section >
  <div class="formulaire">
 
 		  <div class="title">
-            <h1 >Formulaire Id commande</h1>
+            <h1 >Formulaire commande id  {{request()->route('id')}}  </h1>
           </div>
 
 <div class="input">
@@ -51,7 +51,7 @@ integrity="sha384-wESLQ85D6gbsF459vf1CiZ2+rr+CsxRY0RpiF1tLlQpDnAgg6rwdsUF1+Ics2b
   
  
  
-
+ <input type="hidden" id="commande_id" name="id_commande" value=" {{request()->route('id')}} ">
   <label for="nom">Nom :</label>
   <input onsubmit=" return Confirmernom()" class="controle"onkeyup='this.value=this.value.toUpperCase()' type="text" id="nom" name="nom" size="20"   minlength="3" maxlength="20" placeholder="nom" required>
 
@@ -67,6 +67,8 @@ integrity="sha384-wESLQ85D6gbsF459vf1CiZ2+rr+CsxRY0RpiF1tLlQpDnAgg6rwdsUF1+Ics2b
 
 
 <br>
+<label for="prenom">pseudo skype:&nbsp;&nbsp;</label>
+	<input onsubmit=" return Confirmerprenom()" class="controle" type="text" id="pseudo" name="pseudo" size="30"  minlength="3" maxlength="20" placeholder="psedo"  required>
 	</div>
 
 
@@ -106,9 +108,8 @@ integrity="sha384-wESLQ85D6gbsF459vf1CiZ2+rr+CsxRY0RpiF1tLlQpDnAgg6rwdsUF1+Ics2b
 
 
 <div class="input4">
-	
-<input type="button" value="Valider" 
-onClick="Confirmersaisie() , Confirmeremail() , Confirmernom() , Confirmerheure() , Confirmerprenom() , Confirmertel()">
+
+<a><button type="submit" onClick="Confirmersaisie() , Confirmeremail() , Confirmernom() , Confirmerheure() , Confirmerprenom() , Confirmertel()"> Valider  </button></a>
 
 
 

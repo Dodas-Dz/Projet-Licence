@@ -10,9 +10,9 @@ class Pack extends Model
     use HasFactory;
     protected $filable =['nom','prix' ,'service_id'];
     public function service(){
-        return $this->belongsTo('App\Service');
+        return $this->belongsTo('App\Models\Service');
     }
     public function commandes(){
-        return $this->hasMany('App\Commande');
+        return $this->hasMany('App\Models\Commande');
     }
 }

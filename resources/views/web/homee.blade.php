@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>Acceuil</title>
+<title>Zyrah | Acceuil</title>
 <link href="{{asset('accueil/css/css.css')}}" rel="stylesheet">	
 
 <link rel="icon" type="image/png" href="accueil/img/logo/Sans nom-2.png" >

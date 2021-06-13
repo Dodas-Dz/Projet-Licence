@@ -15,17 +15,24 @@ Route::get('/service-des', [App\Http\Controllers\ServiceController::class, 'inde
 Route::get('/apropos-nous', function () {
     return view('web/apropos');
 })->name('apropos');
+Route::middleware(['auth'])->group(function () {
+    Route::get('/mycommande', [App\Http\Controllers\CommandesController::class,'getMyCommandes'])->name('commandeuser');
 
-Route::get('/mycommande', function () {
-    return view('web/commandeuser');
-})->name('commandeuser');
-/********************************************rendezvous******************************************************************************************** */
-Route::get('/rendezvouss', [App\Http\Controllers\RendezvousController::class, 'index'])->name('rendezvous');
-/***********************************************commande***************************************************************************************** */
-route::post('/templateweb', [App\Http\Controllers\CommandesController::class, 'store'])->name('commande');
-route::post('/templateapp', [App\Http\Controllers\CommandesController::class, 'commandeapp'])->name('commandeapp');
+    /********************************************rendezvous******************************************************************************************** */
+    Route::get('/rendezvous/{id}', [App\Http\Controllers\RendezvousController::class, 'index'])->name('rendezvous');
+    route::post('rendezvossus', [App\Http\Controllers\RendezvousController::class, 'store'])->name('rendez_vous');
+    /***********************************************commande***************************************************************************************** */
+    route::post('/templateweb', [App\Http\Controllers\CommandesController::class, 'store'])->name('commande');
+    route::post('/templateapp', [App\Http\Controllers\CommandesController::class, 'commandeapp'])->name('commandeapp');
+    route::post('/templatedesign', [App\Http\Controllers\CommandesController::class, 'commandedesign'])->name('commandedesign');
+    Route::get('/paiments', function () {
+        return view('web/paiment');
+    })->name('paiment');
+});
+/**********************************commande-interface ***************************************************** */
 
-route::post('/templatedesign', [App\Http\Controllers\CommandesController::class, 'commandedesign'])->name('commandedesign');
+Route::get('/All_commande', [App\Http\Controllers\CommandesController::class,'getCommandesAdmin'])->middleware('can:isAdmin')->name('commandeadmin');
+Route::get('commande/{id}',[App\Http\Controllers\CommandesController::class,'deleteCommande'])->middleware('can:isAdmin')->name('commande.delete');
 /**************************************************template************************************************************************************** */
 /*Route::get('/template/{item}', function ($item) {
     return view("web/templateweb/".$item);
@@ -65,3 +72,6 @@ Route::get('/templateapp', function () {
     return view('web\pages\formulaire\app');
 })->name('templateapp');
 
+Route::get('/paiments', function () {
+    return view('web/paiment');
+})->name('paiment');

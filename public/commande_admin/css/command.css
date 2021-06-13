@@ -41,6 +41,19 @@ main .commande {
   padding-left: 30px;
   padding-right: 30px;
 }
+
+main .commande i {
+  position: relative;
+  top: 45px;
+  left: 375px;
+}
+main .commande i:hover {
+  color: rgb(156, 29, 29);
+  cursor: pointer;
+
+  animation: shake 0.3s;
+  transform: scale(1.7);
+}
 main .commande .accordion {
   background-color: #5451c1;
   box-shadow: 0px -5px 12px #888888;
@@ -67,45 +80,107 @@ main .commande .accordion:hover {
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }
+
 .panel .dsc {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  margin-left: 50px;
-  margin-right: 50px;
 }
 .panel .dsc b {
-  padding-left: 30px;
-  padding-right: 30px;
   padding-top: 10px;
   padding-bottom: 7px;
   background-color: #49dcb1;
   color: white;
   font-family: Arial, Helvetica, sans-serif;
   border-radius: 15px;
+
+  flex-basis: calc(20% - -20px);
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 .panel .values {
   display: flex;
+  justify-content: center;
   flex-direction: row;
-  justify-content: space-around;
-  margin-left: 50px;
-  margin-right: 50px;
   margin-top: 1rem;
   padding-bottom: 1.5rem;
   font-family: "Times New Roman", Times, serif;
   color: #0c0977;
   font-weight: 600;
+  flex-shrink: 0;
+  flex-grow: 0;
 }
 
 .panel {
   display: none;
   padding: 10px 5px 20px 18px;
-
+  background-color: #f7f7f7;
   box-shadow: 0px 5px 8px #888888;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
   overflow: hidden;
   color: #1a1944;
+}
+main .changedetat {
+  display: flex;
+  justify-content: center;
+}
+main .changedetat > label {
+  font-weight: 700;
+  margin-right: 10px;
+}
+.panel .values > div {
+  flex-basis: calc(20% - 0px);
+}
+main .commande .accordion > span > span {
+  display: inline-block;
+  width: 13px;
+  height: 13px;
+  border: 2px;
+
+  border-radius: 50%;
+  border: 0.5px solid rgb(255, 255, 255);
+  background-color: #34568b;
+}
+
+main .commande .accordion > span {
+  margin-left: -350px;
+  padding-right: 270px;
+}
+@keyframes shake {
+  0% {
+    transform: rotate(0deg) scale(1);
+  }
+  10% {
+    transform: rotate(-5deg) scale(1.1);
+  }
+  20% {
+    transform: rotate(-15deg) scale(1.1);
+  }
+  30% {
+    transform: rotate(-0deg) scale(1.2);
+  }
+  40% {
+    transform: rotate(5deg) scale(1.2);
+  }
+  50% {
+    transform: rotate(15deg) scale(1.3);
+  }
+  60% {
+    transform: rotate(0deg) scale(1.3);
+  }
+  70% {
+    transform: rotate(-5deg) scale(1.4);
+  }
+  80% {
+    transform: rotate(-15deg) scale(1.4);
+  }
+  90% {
+    transform: rotate(0deg) scale(1.5);
+  }
+  100% {
+    transform: rotate(5deg) scale(1.6);
+  }
 }

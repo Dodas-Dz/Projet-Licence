@@ -13,9 +13,12 @@ class Commande extends Model
         return $this->belongsTo('App\Pack');
     }
     public function rendez_vous(){
-        return $this->HasMany('App\RendezVous');
+        return $this->hasOne('App\Models\RendezVous');
     }
     public function service(){
-        return $this->belongsTo('App\Service');
+        return $this->belongsTo('App\Models\Service');
+    }
+    public function user(){
+        return $this->belongsTo('App\Models\User');
     }
 }

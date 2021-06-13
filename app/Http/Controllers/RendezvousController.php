@@ -34,8 +34,25 @@ class RendezvousController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function store(Request $request)
-    {
-        //
+    { 
+        $request->validate([
+            'id_commande'=>'required',
+            'pseudo'=>'required',
+            'date'=>'required',
+            'heure'=>'required',
+    
+        ]);
+            
+            $rendezvous =new RendezVous;
+            $rendezvous->contact_pseudo='null';
+            $rendezvous->date=$request->input('date');
+            $rendezvous->heurs=$request->input('heure');
+            $rendezvous->commande_id=$request->input('id_commande');
+            $rendezvous->save();
+            return redirect()->route('paiment');
+
+          
+        
     }
 
     /**

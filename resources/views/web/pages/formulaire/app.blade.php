@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>template zzzp</title>
+<title>Zyrah | commande </title>
 
 
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.css" rel="stylesheet" />
@@ -14,7 +14,8 @@
 <link rel="icon" href="img/logo/Sans nom-2.png">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/themes/monolith.min.css"/>
 <link rel="stylesheet" href="{{asset('app/css/templateslide.css')}}">
-<link rel="stylesheet" href="{{asset('app/css/formulaire.css')}}">
+
+<link rel="stylesheet" href="{{asset('web/css/formulaire.css')}}">
 <script src="js/miniprojet.js"></script>
 <link rel="stylesheet" href="{{asset('app/css/btn.css')}}">
 <link rel="stylesheet" href="{{asset('app/css/headerfooter.css')}}">

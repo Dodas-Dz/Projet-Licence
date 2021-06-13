@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>design</title>
+	<title>Zyrah | design</title>
 	
 	<link href="{{asset('design/css/template.css')}}" rel="stylesheet">	
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.css" rel="stylesheet" />
