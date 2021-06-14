@@ -7,7 +7,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 <meta name="HandheldFriendly" content="true">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{{asset('commande_admin/css/headerfooter.css')}}">
+    <link rel="stylesheet" href="{{asset('accueil/css/headerfooter.css')}}">
     <link rel="stylesheet" href="{{asset('commande_admin/css/command.css')}}">
 	<link rel="stylesheet" href="{{asset('commande_admin/css/all.min.css')}}">
 	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -20,20 +20,19 @@
     <main>
     @foreach($commandes as $commande)
     @endforeach
-
-    
-
     <div class="containall">
+    @forelse($commandes as $commande)
 		<div class="text">
-			<h1 class="votre"> tout </h1><h1 class="command"> commandes</h1>
+			<h1 class="votre">  </h1><h1 class="command"> commandes</h1>
 		</div>
-        @foreach($commandes as $commande)
+      
         <div class="commande">
 			<div class="unecommande">
-				<div class="trash"><i class="fa fa-trash w3-large" onclick=""></i></div>
+				<div class="trash"><a href="{{ route('commande.delete',$commande->id) }}"><i class="fa fa-trash w3-large" ></i></a></div>
              <button class="accordion" id="id_commande">
 				 <span>status : <span id="circle"></span></span>
-				 {{$commande->name}} , #service name 
+                
+				 {{$commande->name}} , {{$commande->service->name}} 
              </button>
              <div class="panel" id="panel">
                 <div class="dsc">
@@ -52,8 +51,11 @@
                 </div>
 
 				<div class="changedetat">
+                <form action="{{ route('toggleCommande',$commande->id) }}" method="POST">
+                @method('PUT')
+                @csrf
 					<label for="box1">Changer l'Etat de commande: </label>
-					<select id="box1" onChange="myNewFunction(this);">
+					<select id="box1" onChange="myNewFunction(this);" name="etat">
 						<option value="">changer d'Etat</option>
 						<option value="pre">pre-rdv</option> 
 						<option value="onit">working on it</option>
@@ -61,12 +63,19 @@
 						<option value="canceled">annulé</option>
 						<option value="waiting">attend de pay</option>
 					  </select>
-
+                    <a >
+		<button type="submit" > Valider  </button>
+                    </a>
+                </form>
 				</div>
               </div>
 		   </div>
 		</div>
-        @endforeach
+        @empty
+        <div class="text">
+			<h1 class="votre">  aucune</h1><h1 class="command"> commandes</h1>
+		</div>
+        @endforelse
     </div>
 
 </main>

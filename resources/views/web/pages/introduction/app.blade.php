@@ -5,7 +5,7 @@
 <title>Zyrah | App Service</title>
 <link href="{{asset('app/css/webdev.css')}}" rel="stylesheet">	
 <link rel="stylesheet" href="{{asset('app/css/all.min.css')}}">	
-<link rel="stylesheet" href="{{asset('app/css/responsive.css')}}">
+<link rel="stylesheet" href="{{asset('accueil/css/headerfooter.css')}}">
 <link rel="stylesheet" href="{{asset('app/css/headerfooter.css')}}">
 <link rel="icon" href="app/img/logo/Sans nom-2.png">
 </head>

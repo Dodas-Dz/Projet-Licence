@@ -5,6 +5,7 @@ use App\Models\Commande;
 use App\Models\User;
 use App\Models\RendezVous;
 use App\Models\Service;
+use App\Models\Message;
 use Illuminate\Http\Request;
 
 class CommandesController extends Controller
@@ -31,7 +32,22 @@ class CommandesController extends Controller
     public function deleteCommande($id)
     {
         $commande = Commande::find($id);
+        $commande->rendez_vous->delete();
         $commande->delete();
+        return back();
+    }
+    public function deletemessage($id)
+    {
+        $message = Message::find($id);
+        $message->delete();
+        return back();
+    }
+    public function toggleCommande(Request $request,$id)
+    {
+        $commande = Commande::find($id);
+        $commande->etat = $request->etat;
+        $commande->save();
+
         return back();
     }
     public function getCommandesAdmin()
@@ -40,11 +56,29 @@ class CommandesController extends Controller
                              ->with('user')
                              ->with('service')
                              ->get();
-                            
+                         
                              
         return view('web.commande_admin',compact('commandes'));
     }
-
+    public function getmessage()
+    {
+        $messages= Message::all();                    
+        return view('web.message',compact('messages'));
+    }
+    public function message(Request $request)
+    {
+        $request->validate([
+            'name'=>'required',
+            'email'=>'required',
+            'message'=>'required',
+            ]);
+            $messages =new Message;
+            $messages->name=$request->input('name');
+            $messages->email=$request->input('email');
+            $messages->message=$request->input('message');
+            $messages->save();
+            return redirect()->route('home');
+    }
     /**
      * Show the form for creating a new resource.
      *

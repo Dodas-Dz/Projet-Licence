@@ -16,7 +16,6 @@
     <div class="card-title mx-auto"> Payment</div>
     <div class="nav">
         <ul class="mx-auto">
-            
             <li class="active"><a href="#"></a></li>
         </ul>
     </div>

@@ -14,10 +14,6 @@
 <body>
 	<!--------------------------------start_header------------------------------->
 	@include('layouts.header')
-
-
-
-
 	<!---------------------------------end_header-------------------------------->
 	
 	
@@ -62,7 +58,7 @@
 						<img src="accueil/img/svg/undraw_static_website_0107.svg" >
 						<h2> Site web </h2>
 						<h4>Site web</h4>
-						<a href="#"><i class="fas fa-long-arrow-alt-right direction"></i></a>
+						<a href="{{route('serviceweb')}}"><i class="fas fa-long-arrow-alt-right direction"></i></a>
 
 						<p >Développement des<span> Site web</span> est faite sur plusieurs étapes , réservation et gestion d'un nom de domaine,
 							 la mise en œuvre d'une infrastructure d'hébergement du site
@@ -77,7 +73,7 @@
 						<img src="accueil/img/svg/undraw_design_tools_42tf.svg">
 						<h2>Design</h2>
 						<h4>Design</h4>
-						<a href="#"><i class="fas fa-long-arrow-alt-right direction"></i></a>
+						<a href="{{route('servicedes')}}"><i class="fas fa-long-arrow-alt-right direction"></i></a>
 
 						<p>Création des <span>Design professionnel</span> consiste à répondre au besoin et l'imagination du client selon 
 							son produit si il s'agit d'un produit alimentaire , pharmacetique, mode, artistique ... 
@@ -92,7 +88,7 @@
 						<img src="accueil/img/svg/undraw_mobile_development_8gyo.svg" >
 						<h2>Application mobile</h2>
 						<h4>Application mobile</h4>
-						<a href="#"><i class="fas fa-long-arrow-alt-right direction"></i></a>
+						<a href="{{route('serviceapp')}}"><i class="fas fa-long-arrow-alt-right direction"></i></a>
 
 						<p>Développement des <span>Applications mobile</span> , Une application doit répondre 
 							à un besoin et se voir assigner des objectifs précis
@@ -125,7 +121,7 @@
 					 
 					 et bien évidemment vous pouvez commandez un design professionnel pour vote buisness .
 </p>
-				<a href="#"> Plus de détails</a>
+				<a href="{{route('apropos')}}"> Plus de détails</a>
 			</div>
 		</section>
 	
@@ -138,22 +134,22 @@
       <div class="image-box">
        <img src="accueil/img/svg/undraw_message_sent_1030.svg" alt=""></div>
 
-    <form action="/action_page.php" >
+    <form action="{{ route('message') }}" method="post" >
       <div class="topic">Envoyer un message</div>
       <div class="input-box">
-        <input type="text" required>
+        <input type="text" name='name' required>
         <label>Entrer votre nom</label>
       </div>
       <div class="input-box">
-        <input type="text" required>
+        <input type="text" name='email' required>
         <label>Entrer votre email</label>
       </div>
       <div class="message-box">
 		   <label>Your Message</label>
-	  <textarea placeholder="&nbsp &nbsp  Votre message"></textarea>
+	  <textarea name='message' placeholder="&nbsp &nbsp  Votre message"></textarea>
       </div>
       <div class="input-box">
-        <input type="submit" value="Envoyer Message">
+        <a><input type="submit" value="Envoyer Message"></a>
       </div>
     </form>
   </div>
@@ -170,9 +166,9 @@
 	
 	<!---------------------------------end_main-------------------------------->
 	
-	
-	
+
 	@include('layouts.footer')
 
+	<script src="{{asset('app/js/header.js')}}"></script>
 </body>
 </html>

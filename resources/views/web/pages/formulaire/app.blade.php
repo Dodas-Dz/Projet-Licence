@@ -18,7 +18,7 @@
 <link rel="stylesheet" href="{{asset('web/css/formulaire.css')}}">
 <script src="js/miniprojet.js"></script>
 <link rel="stylesheet" href="{{asset('app/css/btn.css')}}">
-<link rel="stylesheet" href="{{asset('app/css/headerfooter.css')}}">
+<link rel="stylesheet" href="{{asset('accueil/css/headerfooter.css')}}">
 <link href="{{asset('app/css/template.css')}}" rel="stylesheet">	
 <script src="jscolor.js"></script>
 
@@ -395,6 +395,7 @@
 	@include('layouts.footer')
 	<script src="app/js/jscolor.js"></script>
     <script src="app/js/miniprojet.js"></script>
+	
 
 
 </body>

@@ -2,15 +2,18 @@
 <header>
 		<div class="container">
 			<div class="head">
+			
+			<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
 				<div class="logo"> 
 			<img src="{{asset('img/zyrah.png')}}" alt="logo">
 		</div>
 		
 		
 		<nav  class="primary-navigation">
+		<a  class="closebtn" onclick="closeNav()">&times;</a>
 			<ul >
 				  <li><a href="{{route('home')}}">Acceuil</a></li>
-				  <li><a href="#">Services &dtrif;</a>
+				  <li><a href="#" onclick="openlist()">Services <span id="arow"><i id="arrow" class="fas fa-angle-down"></i></span></a>
 						<ul class="dropdown">
 						    <li><a href="{{route('serviceweb')}}" >Site-web</a></li>
 						    <li><a href="{{route('serviceapp')}}">App-Mobile</a></li>
@@ -23,6 +26,7 @@
 					@endcan
 				@can('isAdmin')
 					<li><a href="{{route('commandeadmin')}}">commande admin</a></li>
+					<li><a href="{{route('allmessage')}}">Message</a></li>
 					@endcan
 					<li><a href="{{route('apropos')}}">A propos</a></li>
 					@guest
@@ -59,9 +63,7 @@
 		
 			</ul>
 	   </nav>
-<!--				<li><a href="#"> <i class="fas fa-chevron-down"></i></a></li>-->
-				
-<!--				<li><a href="#">  <i class="fas fa-chevron-down"></i> </a></li>-->
+
 				
 			
 		</div>
@@ -75,8 +77,9 @@
 		
 	
 	</header>
+	
+  
 
-
-
+	
 
 <!--------------------------------end_header-------------------------------> 

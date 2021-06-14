@@ -6,7 +6,7 @@
 <link href="{{asset('rendezvous/css/main.css')}}" rel="stylesheet">
 <link rel="stylesheet" href="{{asset('rendezvous/css/all.min.css')}}">
 <link rel="stylesheet" href="{{asset('rendezvous/css/respensive.css')}}">
-<link rel="stylesheet" href="{{asset('rendezvous/css/headerfooter.css')}}">
+<link rel="stylesheet" href="{{asset('accueil/css/headerfooter.css')}}">
 <link rel="stylesheet" href="{{asset('rendezvous/css/error.css')}}">
 
 <link rel="icon" type="image/png" href="rendezvous/img/logo/Sans nom-2.png" >

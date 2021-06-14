@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{{asset('commande/css/headerfooter.css')}}">
+    <link rel="stylesheet" href="{{asset('accueil/css/headerfooter.css')}}">
     <link rel="stylesheet" href="{{asset('commande/css/command.css')}}">
     
     <title>Zyrah | my commande</title>
@@ -15,7 +15,7 @@
    
 
     <main>
-    @foreach($commandes as $commande)
+    @forelse($commandes as $commande)
     <div class="containall">
 		<div class="text">
 			<h1 class="votre"> Votre  </h1><h1 class="command"> commandes</h1>
@@ -37,9 +37,19 @@
                      <div class="Etat">{{$commande->etat}} </div>
                 </div>
             </div>
-    </div>
+            </div>
+            @empty
+            <div class="containall">
+		<div class="text">
+			<h1 class="votre"> aucune  </h1><h1 class="command"> commandes</h1>
+		</div>
+        
+            </div>
+            </div>
+
+    
   
- @endforeach
+ @endforelse
 </main>
 @include('layouts.footer')
   <script src="commande/js/command.js"></script>

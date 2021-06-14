@@ -16,7 +16,7 @@ class RendezvousController extends Controller
     {
         return view('/web/rendezvous/rendez-vous');
     }
-
+   
     /**
      * Show the form for creating a new resource.
      *
@@ -44,7 +44,7 @@ class RendezvousController extends Controller
         ]);
             
             $rendezvous =new RendezVous;
-            $rendezvous->contact_pseudo='null';
+            $rendezvous->contact_pseudo='pseudo';
             $rendezvous->date=$request->input('date');
             $rendezvous->heurs=$request->input('heure');
             $rendezvous->commande_id=$request->input('id_commande');

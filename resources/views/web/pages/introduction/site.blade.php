@@ -5,7 +5,7 @@
 <title>Zyrah | web service</title>
 <link href="{{asset('web/css/webdev.css')}}" rel="stylesheet">	
 <link rel="stylesheet" href="{{asset('web/css/all.min.css')}}">	
-<link rel="stylesheet" href="{{asset('web/css/responsive.css')}}">
+<link rel="stylesheet" href="{{asset('accueil/css/headerfooter.css')}}">
 <link rel="stylesheet" href="{{asset('web/css/headerfooter.css')}}">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
 <link rel="icon" href="web/img/logo/Sans nom-2.png">
