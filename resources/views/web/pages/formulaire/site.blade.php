@@ -9,7 +9,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
 <link rel="stylesheet" href="{{asset('web/css/all.min.css')}}">	
-<link rel="stylesheet" href="{{asset('accueil/css/headerfooter.css')}}">
+<link rel="stylesheet" href="{{asset('apropos/css/headerfooter.css')}}">
 <link rel="stylesheet" href="{{asset('web/css/btn.css')}}">
 <link rel="icon" href="img/logo/Sans nom-2.png">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/themes/monolith.min.css"/>
@@ -50,7 +50,7 @@
 					
 					
 					<div class="img">
-						<img src="web/img/templateimgs/Web development _Isometric.png" alt="img">
+						<img src="web/img1/templateimgs/Web development _Isometric.png" alt="img">
 					
 					</div>
 				
@@ -75,7 +75,7 @@
         <div class="mySlides fade">
 
             <div class="container">
-            <img src="web/img/templateimgs/lense.png" class="image">
+            <img src="web/img1/templateimgs/lense.png" class="image">
             <div class="text">
 				<div class="overlay">
                     <section class="container">
@@ -95,7 +95,7 @@
         <div class="mySlides fade">
             <div class="numbertext">2 / 6</div>
             <div class="container">
-            <img src="web/img/templateimgs/ethereal.png" class="image">
+            <img src="web/img1/templateimgs/ethereal.png" class="image">
             <div class="text"><div class="overlay">
                 <section class="container">
 					<div class="down">
@@ -112,7 +112,7 @@
         <div class="mySlides fade">
           <div class="numbertext">3 / 6</div>
           <div class="container">
-          <img src="web/img/templateimgs/food.png" class="image">
+          <img src="web/img1/templateimgs/food.png" class="image">
           <div class="text"><div class="overlay">
             <section class="container">
 				<div class="down">
@@ -130,7 +130,7 @@
         <div class="mySlides fade">
             <div class="numbertext">4 / 6</div>
             <div class="container">
-            <img src="web/img/templateimgs/strata.png" class="image">
+            <img src="web/img1/templateimgs/strata.png" class="image">
             <div class="text"><div class="overlay">
                 <section class="container">
 					<div class="down">
@@ -146,7 +146,7 @@
           <div class="mySlides fade">
             <div class="numbertext">5 / 6</div>
             <div class="container">
-            <img src="web/img/templateimgs/stronglytyped.png" class="image">
+            <img src="web/img1/templateimgs/stronglytyped.png" class="image">
             <div class="text"><div class="overlay">
               <section class="container">
 				<div class="down">
@@ -162,7 +162,7 @@
           <div class="mySlides fade">
             <div class="numbertext">6 / 6</div>
             <div class="container">
-            <img src="web/img/templateimgs/twenty.png" class="image">
+            <img src="web/img1/templateimgs/twenty.png" class="image">
             <div class="text">
                 <div class="overlay">
                      <section class="container">
@@ -214,7 +214,7 @@
 	  <div class="prcing_section">
 		<div class="pricing_plans">
 		  <div class="img_pricing">
-			<img src="web/img/backg/web new pro 2.png" alt="img">
+			<img src="web/img1/backg/web new pro 2.png" alt="img">
 		  </div>
 		  <div class="info_pricing">
 			<h2>Basique</h2>
@@ -235,7 +235,7 @@
 		
 		<div style="border: 50px;" class="pricing_plans">
 		  <div class="img_pricing">
-			<img src="web/img/backg/web new pro 2.png" alt="img">
+			<img src="web/img1/backg/web new pro 2.png" alt="img">
 		  </div>
 		  <div class="info_pricing">
 			<h2>Illimité</h2>
@@ -256,7 +256,7 @@
 		
 		<div class="pricing_plans">
 		  <div class="img_pricing">
-			<img src="web/img/backg/web new pro 2.png" alt="img">
+			<img src="web/img1/backg/web new pro 2.png" alt="img">
 		  </div>
 		  <div class="info_pricing">
 			<h2>VIP</h2>

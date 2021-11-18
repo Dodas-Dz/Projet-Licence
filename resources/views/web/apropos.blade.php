@@ -3,10 +3,11 @@
 <head>
 <meta charset="utf-8">
 <title>Zyrah | A propos</title>
+<link rel="icon" type="image/png" href="accueil/img/logo/Sans nom-2.png" >
 <link rel="stylesheet" href="{{asset('apropos/css/css.css')}}">	
 <link rel="stylesheet"href="{{asset('apropos/css/all.min.css')}}">	
 <link rel="stylesheet"href="{{asset('apropos/css/respensive.css')}}">
-<link rel="stylesheet" href="{{asset('accueil/css/headerfooter.css')}}">
+<link rel="stylesheet" href="{{asset('apropos/css/headerfooter.css')}}">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css" 
 integrity="sha384-wESLQ85D6gbsF459vf1CiZ2+rr+CsxRY0RpiF1tLlQpDnAgg6rwdsUF1+Ics2bni" crossorigin="anonymous">
 </head>
@@ -174,28 +175,29 @@ integrity="sha384-wESLQ85D6gbsF459vf1CiZ2+rr+CsxRY0RpiF1tLlQpDnAgg6rwdsUF1+Ics2b
 		<section class="feadback">
 			<div class="container">
 				<div class="title">
-					<h3>Retour clients </h3>
-					<h2>Ce qu'ils disent sur nous</h2>
+					<h3></h3>
+					<h2>Remerciements</h2>
 				</div>
 				<div class="feadback_section">
 					<div class="feadback_content">
-						<h2>mr...</h2>
-						<span>Web Developer</span>
-						<p>Compétence, rapidité, design l'équipe ZYRAH à de quoi vous faire plaisir sur tout les points </p>
+						<h2>mr Abdelhak Etchiali</h2>
+						<span>examinateur</span>
+						<p>J'adresse mes sincères remerciements à Monsieur le Professeur Abdelhak Etchiali , 
+						d'avoir accepté de se joindre à ce jury comme examinateur. </p>
 						<a href="#"><i class="fab fa-facebook-f"></i></a>
 						<a href="#"><i class="fab fa-twitter"></i></a>
 						<a href="#"><i class="fab fa-instagram"></i></a>
 						
 						<div class="img_feadback">
-							<img src="apropos/img/profil.png" alt="img">
+							<img src="apropos/img/photo.jpg" alt="img">
 						</div>
 					</div>
 					
 					<div class="feadback_content">
-						<h2>mr.BOUKHALF</h2>
-						<span>Web Developer & Professor</span>
-						<p>Je l'est connait en tant qu'étudiant une équipe de choc ils sont sans arrêt
-							 ils cherchent, travaillent se lancent ils n'ont peur de rien</p>
+						<h2>mr.Mohammed BOUKHELF</h2>
+						<span>encadrant</span>
+						<p>je tiens à remercier, très sincèrement, le Professeur Mohammed BOUKHELF ,
+						 on a l'honneur et la chance de bénéficier de ses connaissances et compétences, de ses précieux conseils </p>
 						
 						<a href="#"><i class="fab fa-facebook-f"></i></a>
 						<a href="#"><i class="fab fa-twitter"></i></a>

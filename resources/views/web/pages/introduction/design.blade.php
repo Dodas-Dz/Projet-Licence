@@ -9,7 +9,7 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 	
 	<link rel="stylesheet" href="{{asset('design/css/all.min.css')}}">	
-	<link rel="stylesheet" href="{{asset('accueil/css/headerfooter.css')}}">
+	<link rel="stylesheet" href="{{asset('apropos/css/headerfooter.css')}}">
 	<link rel="stylesheet" href="{{asset('design/css/btn.css')}}">
 	<link rel="icon" href="img/logo/Sans nom-2.png">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/themes/monolith.min.css"/>

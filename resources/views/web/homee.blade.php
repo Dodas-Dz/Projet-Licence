@@ -8,7 +8,7 @@
 <link rel="icon" type="image/png" href="accueil/img/logo/Sans nom-2.png" >
 <link rel="stylesheet" href="{{asset('accueil/css/all.min.css')}}">	
 <link rel="stylesheet" href="{{asset('accueil/css/respensive.css')}}">
-<link rel="stylesheet" href="{{asset('accueil/css/headerfooter.css')}}">
+<link rel="stylesheet" href="{{asset('apropos/css/headerfooter.css')}}">
 </head>
 
 <body>

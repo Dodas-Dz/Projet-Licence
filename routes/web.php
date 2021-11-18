@@ -3,7 +3,7 @@
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    return view('auth/login');
+    return view('web/homee');
 });
 
 Auth::routes();
@@ -43,7 +43,7 @@ Route::PUT('toggleCommande/{id}',[App\Http\Controllers\CommandesController::clas
     return view("web/templateweb/".$item);
 })->name('a');*/
 Route::get('/ethereal', function () {
-    return view('web/templateweb');
+    return view('web/templateweb/ethereal');
 })->name('ethereal');
 
 Route::get('/lense', function () {

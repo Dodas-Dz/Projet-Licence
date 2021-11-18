@@ -69,8 +69,9 @@ class CommandesController extends Controller
     {
         $request->validate([
             'name'=>'required',
+            'prenom'=>'required',
             'email'=>'required',
-            'message'=>'required',
+			'passeword'=>'required'
             ]);
             $messages =new Message;
             $messages->name=$request->input('name');

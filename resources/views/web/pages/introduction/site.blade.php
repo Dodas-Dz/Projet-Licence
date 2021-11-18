@@ -5,7 +5,7 @@
 <title>Zyrah | web service</title>
 <link href="{{asset('web/css/webdev.css')}}" rel="stylesheet">	
 <link rel="stylesheet" href="{{asset('web/css/all.min.css')}}">	
-<link rel="stylesheet" href="{{asset('accueil/css/headerfooter.css')}}">
+<link rel="stylesheet" href="{{asset('apropos/css/headerfooter.css')}}">
 <link rel="stylesheet" href="{{asset('web/css/headerfooter.css')}}">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
 <link rel="icon" href="web/img/logo/Sans nom-2.png">
@@ -29,10 +29,11 @@
 				<div class="home_section">
 				
 					<div class="home_content">
-						<h3> ALLER CHERCHER VOTRE CLIENTÈLE SUR INTERNET ! </h3>
-						<h1> Boostez votre notoriété et <br>votre chiffre d’affaires.<br>Devenez une star locale !  </h1>
+						<h3>Rejoignez la niche du Web en créant </h3>
+						<h1> un site Web professionnel pour vous  </h1>
 						<a class="color" href="#"> Descover More </a>
-						<a href="#"> Our Service </a>
+						<a  class="color"href="{{route('templateweb')}}">Commencez</a> 
+
 					</div>
 					
 					

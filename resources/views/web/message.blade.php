@@ -6,8 +6,9 @@
 	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 <meta name="HandheldFriendly" content="true">
+<link rel="icon" type="image/png" href="accueil/img/logo/Sans nom-2.png" >
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{{asset('accueil/css/headerfooter.css')}}">
+    <link rel="stylesheet" href="{{asset('apropos/css/headerfooter.css')}}">
     <link rel="stylesheet" href="{{asset('commande_admin/css/command.css')}}">
 	<link rel="stylesheet" href="{{asset('commande_admin/css/all.min.css')}}">
 	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">

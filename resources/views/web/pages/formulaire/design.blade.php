@@ -13,7 +13,7 @@
 <link rel="stylesheet" href="{{asset('templatedes/css/btn.css')}}">
 <link rel="icon" href="templatedes/img/logo/Sans nom-2.png">
 <link rel="stylesheet" href="{{asset('templatedes/css/css3.0.css')}}">
-<link rel="stylesheet" href="{{asset('accueil/css/headerfooter.css')}}">
+<link rel="stylesheet" href="{{asset('apropos/css/headerfooter.css')}}">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/themes/monolith.min.css"/>
 <link rel="stylesheet" href="{{asset('templatedes/css/templateslide.css')}}">
 

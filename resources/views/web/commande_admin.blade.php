@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" type="image/png" href="accueil/img/logo/Sans nom-2.png" >
 	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 <meta name="HandheldFriendly" content="true">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{{asset('accueil/css/headerfooter.css')}}">
+    <link rel="stylesheet" href="{{asset('apropos/css/headerfooter.css')}}">
     <link rel="stylesheet" href="{{asset('commande_admin/css/command.css')}}">
 	<link rel="stylesheet" href="{{asset('commande_admin/css/all.min.css')}}">
 	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -46,7 +47,7 @@
 					<div class="nom_client">{{$commande->user->name}}</div>
                     <div class="nom_commande">{{$commande->name}} </div>
                     <div class="date_commande">{{$commande->created_at}}</div>
-                     <div class="date_rdv">{{$commande->rendez_vous->date}}</div>
+                     <div class="date_rdv">{{$commande->rendez_vous->date}} A {{$commande->rendez_vous->date}}</div>
                      <div id="Etat">{{$commande->etat}} </div>
                 </div>
 

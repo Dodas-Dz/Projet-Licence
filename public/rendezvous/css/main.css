@@ -194,7 +194,7 @@ form .formulaire .input .input2 small{
 
 
 
-  form .formulaire .input .input4 input {
+  form .formulaire .input .input4 button {
     background-color: #5451C1;
     width: 200px;
     height: 50px;
@@ -217,7 +217,7 @@ form .formulaire .input .input2 small{
     font-weight: 500;
     font-variant-position: inherit;
   }
-  form .formulaire .input .input4 input:hover {
+  form .formulaire .input .input4 a button:hover {
     background-color: rgb(248, 248, 248);
     transform: translateY(5px);
     transform: translateX(5px);

@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" type="image/png" href="accueil/img/logo/Sans nom-2.png" >
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{{asset('accueil/css/headerfooter.css')}}">
+    <link rel="stylesheet" href="{{asset('apropos/css/headerfooter.css')}}">
     <link rel="stylesheet" href="{{asset('commande/css/command.css')}}">
     
     <title>Zyrah | my commande</title>
@@ -33,7 +34,7 @@
                 <div class="values">
                     <div class="nom_commande">{{$commande->name}} </div>
                     <div class="date_commande">{{$commande->created_at}} </div>
-                     <div class="date_rdv">{{$commande->rendez_vous->date}} </div>
+                     <div class="date_rdv">{{$commande->rendez_vous->date}} A {{$commande->rendez_vous->heurs}} </div>
                      <div class="Etat">{{$commande->etat}} </div>
                 </div>
             </div>

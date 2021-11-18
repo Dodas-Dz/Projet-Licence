@@ -8,7 +8,7 @@
     <div class="container">
       <div class="list_footer">
         <div class="lists_footer">
-          <div class="logo"> <img src="web/img/logo/zyrah.png" alt="logo">
+          <div class="logo"> <img src="{{asset('web/img/logo/zyrah.png')}}" alt="logo">
             <p>Nos réseaux sociaux :</p>
             <ul>
               <li><a href="https://www.facebook.com/zyrah.grp/" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
